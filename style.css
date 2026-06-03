@@ -17,3 +17,19 @@ li a:hover {
   background-color: #555555;
   color: #ffffff;
 }
+
+.navbar .nav-links {
+/* vertical line to separate nav bar from content */
+  
+  border-right: #555555 solid 1px;
+  background-color: #d6cccc;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+}
+
+main {
+   padding : 0 20px;
+}

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>    
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+  font-family: 'Alegreya', 'Times New Roman', Times, serif, sans-serif;
+  margin: 20px;
+  background-color: #d6cccc;
+}
+</style>
+
+
+    <title>CSCI 5612 Machine Learning Project</title>
+    <h1>CSCI 5612 Machine Learning Project - Summer 2026</h1>
+    <h3> Dylan Hudson </h3>
+  </head>
+<body>
+<div class="container">
+<nav class="navbar">
+    <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="introduction.html">Introduction</a></li>
+   <li><a href="dataprep.html">Data Preparation and EDA</a></li>
+  <li><a href="clustering.html">Clustering</a></li>
+  <li><a href="arm.html">Association Rule Mining</a></li>
+  <li><a href="dectrees.html">Decision Trees</a></li>
+  <li><a href="naivebayes.html">Naive Bayes</a></li>
+  <li><a href="svms.html">Support Vector Machines</a></li>
+<li><a href="regression.html">Regression</a></li>
+  <li><a href="nn.html">Neural Networks</a></li>
+  <li><a href="conclusions.html">Conclusions</a></li>
+</ul>
+</nav>
+
+
+<main>
+      <h2>Data Preparation and EDA</h2>
+      <p>This table organizes the various datasets sourced for the project, with links to the host sites/APIs, descriptions, and respective pages with EDA and cleaning processes.</p>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+          <th align="left">Dataset</th>
+          <th align="left">Description</th>
+          <th align="left">Source</th>
+          <th align="left">EDA/Cleaning</th>
+          <th align="left">Data & Code</th>
+        </tr>
+        <tr>
+          <td>Clinical Case Data from the NIH Proteomic Data Commons (PDC)</td>
+          <td>Patient-level demographic, risk factor, and protein expression data. Pulled by <a href="https://proteomic.datacommons.cancer.gov/pdc/publicapi-documentation/#!/Case/allCases">API</a></td>
+          <td><a href="https://proteomic.datacommons.cancer.gov/pdc/">PDC</a></td>
+          <td><a href="pdc.html">API script, EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>500 Cities Health Data</td>
+          <td>Health-related data for 500 US cities, including lifestyle factors and health outcomes.</td>
+          <td><a href="https://www.cdc.gov/500cities/">CDC 500 Cities</a></td>
+          <td><a href="500cities.html">500 Cities EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>Genomic Data from TCGA</td>
+          <td>Genomic and clinical data for various cancer types from The Cancer Genome Atlas.</td>
+          <td><a href="https://www.cancer.gov/tcga">TCGA Data</a></td>
+          <td><a href="dataprep.html#tcga">TCGA EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+
+        <tr>
+          <td>Synthetic Pancreatic Cancer Data</td>
+          <td>2,000 pt simulated dataset with cancer subtypes, genetic mutations, treatment modes, and other clinical features</td>
+          <td><a href="https://www.kaggle.com/datasets/zkskhurram/pancreatic-cancer-global-clinical-and-risk-factor"> Kaggle</td>
+          <td><a href="pancreatic.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>NIH PubMed Abstracts</td>
+          <td>Abstracts from PubMed related to certain cancer prognoses for qualitative use or NLP. Pulled by <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi">API</a>.</td>
+          <td><a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></td>
+          <td><a href="pubmed.html">API script, EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>EPA Annual Air Quality Data</td>
+          <td>Data on air quality and environmental factors from the Environmental Protection Agency (EPA).</td>
+          <td><a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Meta">EPA Data</a></td>
+          <td><a href="epa.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>USGS Pesticide Use Data</td>
+          <td>Data on pesticide use from the United States Geological Survey (USGS).</td>
+          <td><a href="https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/">USGS Data</a></td>
+          <td><a href="usgs.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>National Cancer Institute State Cancer Profiles</td>
+          <td>Data on cancer incidence and mortality rates by state from the National Cancer Institute.</td>
+          <td><a href="https://statecancerprofiles.cancer.gov/incidencerates/index.php">NCI Data</a></td>
+          <td><a href="nci.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+        <tr>
+          <td>USDA Economic Research Service Data</td>
+          <td>Reports on unemployment and education levels</td>
+          <td><a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">USDA Data</a></td>
+          <td><a href="usda.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+        </tr>
+      </table>
+
+
+
+</main>
+</div>
+</body>
+
+</html>

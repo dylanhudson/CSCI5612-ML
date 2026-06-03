@@ -1,0 +1,691 @@
+case_id,case_submitter_id,disease_type,primary_site,pdc_study_id,cancer_type,ethnicity,gender,race,vital_status,days_to_birth,days_to_death
+2dfc05ef-63d8-11e8-bcf1-0a2705229b82,TCGA-A6-3807,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,female,white,Alive,-19624,
+2f35a510-63d8-11e8-bcf1-0a2705229b82,TCGA-A6-3808,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,male,white,Alive,-26666,
+3073d082-63d8-11e8-bcf1-0a2705229b82,TCGA-A6-3810,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,male,white,Alive,-22999,
+40f43066-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3518,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-29769,
+423218ed-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3525,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-32871,
+4377f550-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3526,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-21123,
+44b504f0-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3529,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-28609,
+45f0cbee-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3531,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-27514,
+472f0ffd-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3534,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-28489,
+48696542-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3552,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-31290,396
+49b093b2-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3554,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-22799,
+4afcfca3-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3558,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-25752,
+4c39731c-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3561,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26420,
+4d755a0c-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3664,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-27363,
+4eb1190e-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3666,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-25020,61
+4fef1084-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3672,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-32872,
+5168c0f2-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3684,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23741,
+52c1dfe9-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3695,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23164,
+53ffab37-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3710,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-29465,
+55548339-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3715,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-28428,579
+56954cc3-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3818,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-28763,30
+57da6e5e-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3848,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-30194,306
+591895b2-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3864,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26237,
+5a578797-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3986,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26967,
+5bd59267-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-3989,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-30712,242
+5d13fcec-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A004,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-27943,
+5e4f679d-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00A,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-29463,
+5f930e6f-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00E,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-23741,
+60d3e64a-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00F,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24379,
+621a752f-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00J,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-29371,
+63649645-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00K,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-29189,
+64a2daab-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00N,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-27667,122
+65e185dd-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00O,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-30316,
+6724e778-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00R,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23528,
+6860e8b8-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A00U,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-18263,
+9615897c-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A002,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-13090,
+699e7081-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A010,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-16922,
+974f5654-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A008,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-18416,
+6adc680a-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A017,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-21032,
+988d66de-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A00C,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-18201,
+6c2116cf-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01C,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-27729,
+99cb2cec-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A00H,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-27485,
+6d5fca8a-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01D,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-17318,334
+6ea93395-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01F,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26298,
+9b082d45-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A00Y,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24837,
+6ffd96e5-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01I,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-27759,
+9c4dfa82-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A011,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-29463,
+719c4076-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01K,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-27029,
+9d8d548f-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A014,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-31718,
+72e26998-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01P,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-29554,1158
+9ec81956-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A015,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23496,
+742176df-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01R,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-17289,
+a005feb4-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A016,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-20178,
+75615f99-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01S,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-17257,
+a1414a42-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A01J,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-21581,
+769eda03-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01T,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23192,
+a27abe5c-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A01L,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-21369,
+77dfb88f-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01V,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-21792,
+a3b8a741-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A01N,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-25049,
+7921f294-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01X,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-29281,
+a4f480ac-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A01W,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-24745,
+7a77aded-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A01Z,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24990,
+a639563c-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A01Y,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-18112,
+7bb26f73-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A022,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-32446,
+a77625be-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A020,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-20851,
+7cf1133a-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A024,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-29708,1188
+a908ac2c-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A026,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-24413,59
+7e38c19b-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A029,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24686,
+aa6d638b-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A02N,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24687,
+7f9ddc5a-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02E,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-30256,90
+abb6edd1-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A02X,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-28399,
+80dab332-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02H,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-27362,61
+acf3687c-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A032,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24865,
+8217472f-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02J,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-25749,153
+ae381fa3-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-A036,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26206,
+835b8135-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02O,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-30288,
+8498bc72-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02R,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-30834,670
+85e1d2b8-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A02Y,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-26724,
+87208dbd-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A03F,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-32872,549
+885ec435-63d8-11e8-bcf1-0a2705229b82,TCGA-AA-A03J,Colon Adenocarcinoma,Colon,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-23986,
+89999ae4-63d8-11e8-bcf1-0a2705229b82,TCGA-AF-2691,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,female,white,Alive,-17759,
+8ad3214f-63d8-11e8-bcf1-0a2705229b82,TCGA-AF-2692,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,female,white,Alive,-19830,
+8c19f139-63d8-11e8-bcf1-0a2705229b82,TCGA-AF-3400,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,male,white,Alive,-19826,
+8d5b1a5f-63d8-11e8-bcf1-0a2705229b82,TCGA-AF-3913,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not hispanic or latino,male,black or african american,Dead,-21970,316
+8e9702c3-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-3574,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Dead,-32781,1096
+8fd2207a-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-3580,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-24775,
+910e8e39-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-3584,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-22189,730
+92584f35-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-3593,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,female,not reported,Alive,-26480,
+939d5b1e-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-3594,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Dead,-28277,61
+94d189be-63d8-11e8-bcf1-0a2705229b82,TCGA-AG-4007,Rectum Adenocarcinoma,Rectum,"['PDC000111', 'b998098f-57b8-11e8-b07a-00a098d917f8']",colorectal,not reported,male,not reported,Alive,-31776,
+ebd22406-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A18U,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-26426,1563
+da282277-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0C0,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-23006,
+3d3122af-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A08Z,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-28003,
+cd853e7e-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0TY,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-19836,1699
+3964c3f9-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A076,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-24230,
+e421b52e-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0EE,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-24850,
+db63cb90-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0C1,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-22377,1411
+cffaa5e5-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A1AP,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-29406,
+d3aef0d7-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A1AV,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,hispanic or latino,male,white,Alive,-24875,
+ed0e994d-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A18V,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-17682,1556
+b36a5af5-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0AM,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-20713,
+330e4133-63d8-11e8-bcf1-0a2705229b82,TCGA-A7-A0CE,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-20863,
+df249a75-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0DG,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Alive,-11204,
+bc10255d-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0JC,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-23404,
+f70a83c6-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12Z,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-16508,
+fe883733-63d8-11e8-bcf1-0a2705229b82,TCGA-D8-A13Y,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-19028,
+202280ea-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0T2,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-24235,255
+ef85a16e-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12P,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-20332,
+c757547c-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A12F,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-13409,
+f0cb13ee-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12Q,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Dead,-28733,385
+d4e8179c-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A1AW,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-23855,
+217889b2-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0T3,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-13680,
+18768947-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0EV,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-29285,
+b85cf2e2-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A03O,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Dead,-25362,2483
+b72047f9-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0FL,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-22805,
+36cfed45-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A06N,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-24288,
+cb0d61b4-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0TV,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-24279,
+024cad7d-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A150,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-17580,
+bd4adbe5-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0JE,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Alive,-19516,
+f5ccbe11-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12W,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-18140,
+344adec2-63d8-11e8-bcf1-0a2705229b82,TCGA-A7-A0CJ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-21014,
+04c68980-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A158,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-15903,
+f49043f6-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12V,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-20346,
+240188c9-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0T7,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-18756,
+f35034a7-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12U,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-17045,
+0608bb08-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A159,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-18621,
+f98c2cb5-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A131,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-29966,
+c894884f-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0TR,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-25190,160
+6a4781d0-ec51-11e9-81b4-2a2ae2dbcce4,Internal Reference,Other,Not Reported,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,not reported,not reported,,,
+dde21323-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0DD,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,male,white,Alive,-21386,
+c61a65b2-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A12E,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-18721,
+d136d079-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A1AQ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-18109,
+28fe59bd-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YG,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-23058,
+bfc9877a-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0JL,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-21895,
+31d4b8ba-63d8-11e8-bcf1-0a2705229b82,TCGA-A7-A0CD,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-24242,
+dca21779-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0C7,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-17871,
+22c2b43e-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0T6,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-18334,
+1c91a7a9-63d9-11e8-bcf1-0a2705229b82,blcdb9-I,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,not reported,not reported,,,
+c10409cb-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0JM,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,hispanic or latino,female,not reported,Alive,-14653,
+15fadb80-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0D2,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-16623,
+3e79db01-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A09G,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-29006,
+27bf90ad-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YF,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Alive,-24660,
+c9d1d603-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0TT,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,black or african american,Alive,-19679,
+1c39d311-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0SW,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-30085,1365
+c3a38e6a-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A12B,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,hispanic or latino,female,white,Alive,-23150,
+2cbe7b53-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YM,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-24831,
+1b4c05eb-63d9-11e8-bcf1-0a2705229b82,263d3f-I,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,not reported,not reported,,,
+f84e09f9-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A130,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-19117,
+d8dc8ed7-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0BZ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-21856,
+19bc0395-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0EX,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-16858,
+d625ee3c-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0AV,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,black or african american,Alive,-19314,
+f209fb00-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12T,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,,
+12047797-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0CM,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Dead,-14969,754
+17380b66-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0EQ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Alive,-23543,
+e6e186c1-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0HP,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-23883,
+e0617dfe-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0E0,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-14175,
+b9986c9b-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0J6,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-22462,
+e1a03084-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0E1,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-19192,
+253cee23-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YC,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-21685,
+cc4a5557-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0TX,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-23653,
+c2633b5b-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A126,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-14264,
+1afb10ed-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0EY,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-22872,
+fc0ec4a7-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A135,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-23667,
+ffc8b74d-63d8-11e8-bcf1-0a2705229b82,TCGA-D8-A142,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-27313,
+b4a640a3-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0AS,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-25658,
+be89e3d3-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0JJ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-19758,
+b0cedd28-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0AJ,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-29131,
+2b811776-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YL,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-17702,
+3aa0a974-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A079,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-25294,
+267ec01a-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YD,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-23021,
+ea9581b7-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A18R,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-18524,1142
+1ebafb1f-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0T1,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,american indian or alaska native,Alive,-20227,
+e81fdd02-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A18N,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-32404,1148
+b224e773-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0AL,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-15286,
+07468279-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A15A,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-16750,
+3bdfde9b-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A08G,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-14976,
+d270e7a5-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A1AS,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,asian,Alive,-20028,
+faca7c9c-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A134,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-19010,
+e2e48fc0-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0E9,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-19415,
+d7988a9c-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0BV,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-28699,
+1d759414-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0SX,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-17774,
+1df7f83f-63d9-11e8-bcf1-0a2705229b82,c4155b-C,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,not reported,not reported,,,
+e959b0d7-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A18Q,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Dead,-20675,1692
+038a0679-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A154,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-24999,
+ee487139-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A12L,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-24710,
+af738f95-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A04A,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-13445,
+c4deba9f-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A12D,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-15774,
+010df72d-63d9-11e8-bcf1-0a2705229b82,TCGA-E2-A10A,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-15085,
+e59670cd-63d8-11e8-bcf1-0a2705229b82,TCGA-BH-A0HK,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,white,Alive,-29751,
+fd4c139d-63d8-11e8-bcf1-0a2705229b82,TCGA-C8-A138,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,asian,Alive,-20053,
+14b73c43-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0D1,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-28084,
+3fb775e7-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A09I,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-30711,
+2a407548-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0YI,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-22961,
+cec09f8e-63d8-11e8-bcf1-0a2705229b82,TCGA-AR-A0U4,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-19729,
+bad4ad66-63d8-11e8-bcf1-0a2705229b82,TCGA-AO-A0J9,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-22642,
+1341b7df-63d8-11e8-bcf1-0a2705229b82,TCGA-A2-A0D0,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,black or african american,Alive,-22115,
+b5e2fb26-63d8-11e8-bcf1-0a2705229b82,TCGA-AN-A0FK,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-32462,
+381030bf-63d8-11e8-bcf1-0a2705229b82,TCGA-A8-A06Z,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not reported,female,not reported,Alive,-30984,
+3588ee7d-63d8-11e8-bcf1-0a2705229b82,TCGA-A7-A13F,Breast Invasive Carcinoma,Breast,"['PDC000173', 'b8da9eeb-57b8-11e8-b07a-00a098d917f8']",breast,not hispanic or latino,female,white,Alive,-16363,
+636ec295-118a-11e9-afb9-0a9c39d33490,C3L-01249,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23797,
+cdbb0274-1189-11e9-afb9-0a9c39d33490,C3L-00098,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23197,
+78ff5de8-118a-11e9-afb9-0a9c39d33490,C3L-01311,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-20175,
+e47da4ba-1189-11e9-afb9-0a9c39d33490,C3L-00156,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-20525,
+71dfac9d-118a-11e9-afb9-0a9c39d33490,C3L-01282,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23414,
+8116b9ae-118a-11e9-afb9-0a9c39d33490,C3N-00151,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-22242,
+bf8aa73f-1189-11e9-afb9-0a9c39d33490,C3L-00006,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23700,
+a57fa8f2-118a-11e9-afb9-0a9c39d33490,C3N-00729,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-31527,
+6e7501ca-118a-11e9-afb9-0a9c39d33490,C3L-01257,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-26274,
+41032920-118a-11e9-afb9-0a9c39d33490,C3L-00932,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-24510,
+82d09fee-118a-11e9-afb9-0a9c39d33490,C3N-00200,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,black or african american,Dead,-26248,732
+619df278-118a-11e9-afb9-0a9c39d33490,C3L-01248,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-15531,
+5feac127-118a-11e9-afb9-0a9c39d33490,C3L-01247,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23181,
+575574a0-118a-11e9-afb9-0a9c39d33490,C3L-00949,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23564,
+052c671d-118a-11e9-afb9-0a9c39d33490,C3L-00563,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,asian,Alive,-22777,
+4a109eb2-118a-11e9-afb9-0a9c39d33490,C3L-00942,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23631,
+a91770bc-118a-11e9-afb9-0a9c39d33490,C3N-00743,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,black or african american,Alive,-19452,
+86340bb8-118a-11e9-afb9-0a9c39d33490,C3N-00322,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-25752,
+d4cd4b91-118a-11e9-afb9-0a9c39d33490,NX1,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7ae2b631-118a-11e9-afb9-0a9c39d33490,C3L-01312,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-20729,
+da69274f-118a-11e9-afb9-0a9c39d33490,NX4,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+ab61bb80-118a-11e9-afb9-0a9c39d33490,C3N-00836,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-27509,
+b2a27cfc-118a-11e9-afb9-0a9c39d33490,C3N-00858,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-24019,
+de3650a9-118a-11e9-afb9-0a9c39d33490,NX6,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+8849af9c-118a-11e9-afb9-0a9c39d33490,C3N-00323,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-28627,
+fb305e6f-1189-11e9-afb9-0a9c39d33490,C3L-00361,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23458,
+e3e93bc1-118a-11e9-afb9-0a9c39d33490,NX9,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+8c09d59a-118a-11e9-afb9-0a9c39d33490,C3N-00326,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-16460,
+7d468d2e-118a-11e9-afb9-0a9c39d33490,C3L-01744,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-22808,
+774332e2-118a-11e9-afb9-0a9c39d33490,C3L-01307,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-27242,205
+a023e964-118a-11e9-afb9-0a9c39d33490,C3N-00386,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-16190,
+2995a447-118a-11e9-afb9-0a9c39d33490,C3L-00905,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23742,
+8f7b7b50-118a-11e9-afb9-0a9c39d33490,C3N-00333,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23940,
+8a413c6c-118a-11e9-afb9-0a9c39d33490,C3N-00324,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-24280,
+0c47fcef-118a-11e9-afb9-0a9c39d33490,C3L-00601,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-20899,
+8dbf9afd-118a-11e9-afb9-0a9c39d33490,C3N-00328,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-22800,
+5e29a8d7-118a-11e9-afb9-0a9c39d33490,C3L-01246,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-22948,
+b455abd8-118a-11e9-afb9-0a9c39d33490,C3N-00866,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-28243,
+e67bed99-1189-11e9-afb9-0a9c39d33490,C3L-00157,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,hispanic or latino,female,white,Dead,-22118,1396
+5498017e-118a-11e9-afb9-0a9c39d33490,C3L-00947,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-26010,
+dc9f2a6d-1189-11e9-afb9-0a9c39d33490,C3L-00143,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-25407,
+9e2da4f9-118a-11e9-afb9-0a9c39d33490,C3N-00383,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-22259,
+1907a949-118a-11e9-afb9-0a9c39d33490,C3L-00770,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-26769,
+af3bac3b-118a-11e9-afb9-0a9c39d33490,C3N-00848,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-24214,
+6b043589-118a-11e9-afb9-0a9c39d33490,C3L-01256,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-27474,
+bb818b02-118a-11e9-afb9-0a9c39d33490,C3N-01211,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-21688,
+ad580ba0-118a-11e9-afb9-0a9c39d33490,C3N-00847,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23757,
+759378e9-118a-11e9-afb9-0a9c39d33490,C3L-01304,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-25175,
+1cc0625d-118a-11e9-afb9-0a9c39d33490,C3L-00771,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-31649,134
+0e06b68f-118a-11e9-afb9-0a9c39d33490,C3L-00605,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-26936,
+168e87be-118a-11e9-afb9-0a9c39d33490,C3L-00769,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-20660,
+c4417cc1-118a-11e9-afb9-0a9c39d33490,C3N-01346,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23139,
+0a088f7a-118a-11e9-afb9-0a9c39d33490,C3L-00586,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-18580,
+c5f5e38e-118a-11e9-afb9-0a9c39d33490,C3N-01349,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Dead,-28217,555
+3d30e438-118a-11e9-afb9-0a9c39d33490,C3L-00930,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Not Reported,-26559,
+7ef278e9-118a-11e9-afb9-0a9c39d33490,C3L-01925,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-23870,
+5be58e2e-118a-11e9-afb9-0a9c39d33490,C3L-00963,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-21815,
+22ac5d1d-118a-11e9-afb9-0a9c39d33490,C3L-00781,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,hispanic or latino,female,white,Alive,-17739,
+70207e73-118a-11e9-afb9-0a9c39d33490,C3L-01275,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,not reported,Alive,-23768,
+c289029e-118a-11e9-afb9-0a9c39d33490,C3N-01267,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-20897,
+f610bc43-1189-11e9-afb9-0a9c39d33490,C3L-00356,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-26668,1351
+cb07dc57-1189-11e9-afb9-0a9c39d33490,C3L-00090,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-27587,1281
+cd581d86-118a-11e9-afb9-0a9c39d33490,C3N-01537,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-27304,
+66ee6e22-118a-11e9-afb9-0a9c39d33490,C3L-01252,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-28034,
+912bec48-118a-11e9-afb9-0a9c39d33490,C3N-00334,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-24976,
+456587bd-118a-11e9-afb9-0a9c39d33490,C3L-00938,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-19395,
+d0f63b69-1189-11e9-afb9-0a9c39d33490,C3L-00136,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-18533,
+b0effb8f-118a-11e9-afb9-0a9c39d33490,C3N-00850,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23707,
+c5f06f4e-1189-11e9-afb9-0a9c39d33490,C3L-00032,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-18578,
+a3b1451a-118a-11e9-afb9-0a9c39d33490,C3N-00389,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-22951,
+9858289a-118a-11e9-afb9-0a9c39d33490,C3N-00340,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-22158,
+94bad53c-118a-11e9-afb9-0a9c39d33490,C3N-00337,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-24501,
+fe3bc4e6-ecc4-11e9-81b4-2a2ae2dbcce4,Ref,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+77399cfd-c63a-11ea-b1fd-0aad30af8a83,NX12,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7739a462-c63a-11ea-b1fd-0aad30af8a83,NX17,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+77399f35-c63a-11ea-b1fd-0aad30af8a83,NX13,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7739a015-c63a-11ea-b1fd-0aad30af8a83,NX14,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+77399a00-c63a-11ea-b1fd-0aad30af8a83,NX10,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7739a390-c63a-11ea-b1fd-0aad30af8a83,NX16,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7739a536-c63a-11ea-b1fd-0aad30af8a83,NX18,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+77399c25-c63a-11ea-b1fd-0aad30af8a83,NX11,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+7739a270-c63a-11ea-b1fd-0aad30af8a83,NX15,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+c0d54c8c-118a-11e9-afb9-0a9c39d33490,C3N-01219,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-21421,
+032d27ba-118a-11e9-afb9-0a9c39d33490,C3L-00449,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-21705,
+d6a94773-118a-11e9-afb9-0a9c39d33490,NX2,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+967262c9-118a-11e9-afb9-0a9c39d33490,C3N-00339,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-16577,
+cb83f272-118a-11e9-afb9-0a9c39d33490,C3N-01521,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-27702,
+2eca2103-118a-11e9-afb9-0a9c39d33490,C3L-00918,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-25195,1192
+36c681be-118a-11e9-afb9-0a9c39d33490,C3L-00921,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-24157,
+596e1d74-118a-11e9-afb9-0a9c39d33490,C3L-00961,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Dead,-21764,1290
+cf31f3d1-118a-11e9-afb9-0a9c39d33490,C3N-01802,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,black or african american,Alive,-31052,
+e061c1ea-1189-11e9-afb9-0a9c39d33490,C3L-00145,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-21900,
+694ab8e6-118a-11e9-afb9-0a9c39d33490,C3L-01253,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-28187,
+73a51a51-118a-11e9-afb9-0a9c39d33490,C3L-01284,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,asian,Alive,-18243,
+12997b94-118a-11e9-afb9-0a9c39d33490,C3L-00767,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-20657,
+a7378d52-118a-11e9-afb9-0a9c39d33490,C3N-00734,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-19402,
+ec955c22-1189-11e9-afb9-0a9c39d33490,C3L-00161,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,hispanic or latino,female,white,Alive,-16864,
+b7d3d05e-118a-11e9-afb9-0a9c39d33490,C3N-01001,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-26444,
+c7ab207d-118a-11e9-afb9-0a9c39d33490,C3N-01510,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-19465,
+f91c655f-1189-11e9-afb9-0a9c39d33490,C3L-00358,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-32872,
+dff78dee-118a-11e9-afb9-0a9c39d33490,NX7,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+4bc3f300-118a-11e9-afb9-0a9c39d33490,C3L-00946,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-23444,
+d10cafea-118a-11e9-afb9-0a9c39d33490,C3N-01825,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-25659,
+fe9f9137-1189-11e9-afb9-0a9c39d33490,C3L-00362,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-14058,
+bd69cf78-118a-11e9-afb9-0a9c39d33490,C3N-01212,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23206,
+d8ac4953-118a-11e9-afb9-0a9c39d33490,NX3,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+bf1f593d-118a-11e9-afb9-0a9c39d33490,C3N-01217,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-21296,
+dc6e3ede-118a-11e9-afb9-0a9c39d33490,NX5,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+92faa00d-118a-11e9-afb9-0a9c39d33490,C3N-00335,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-21084,
+e1e441b1-118a-11e9-afb9-0a9c39d33490,NX8,Other,Not Reported,"['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,not reported,not reported,Not Reported,,
+b9bcc643-118a-11e9-afb9-0a9c39d33490,C3N-01003,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Dead,-26984,759
+8484f653-118a-11e9-afb9-0a9c39d33490,C3N-00321,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23452,
+d898b2a0-1189-11e9-afb9-0a9c39d33490,C3L-00139,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Dead,-30538,422
+b609ffcc-118a-11e9-afb9-0a9c39d33490,C3N-00880,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,white,Alive,-22438,
+01072f05-118a-11e9-afb9-0a9c39d33490,C3L-00413,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-21961,
+9a36e995-118a-11e9-afb9-0a9c39d33490,C3N-00377,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-23630,
+d4873729-1189-11e9-afb9-0a9c39d33490,C3L-00137,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-22142,
+c3ca10d9-1189-11e9-afb9-0a9c39d33490,C3L-00008,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-21504,
+1ef863b4-118a-11e9-afb9-0a9c39d33490,C3L-00780,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,hispanic or latino,female,white,Alive,-25267,
+9beb3211-118a-11e9-afb9-0a9c39d33490,C3N-00379,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-15271,
+c81ae16c-1189-11e9-afb9-0a9c39d33490,C3L-00084,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not hispanic or latino,female,white,Alive,-27032,
+c9bdcd45-118a-11e9-afb9-0a9c39d33490,C3N-01520,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Dead,-25521,287
+a1d6b22d-118a-11e9-afb9-0a9c39d33490,C3N-00388,Uterine Corpus Endometrial Carcinoma,"Uterus, NOS","['PDC000125', 'c935c587-0cd1-11e9-a064-0a9c39d33490']",ucec,not reported,female,other,Alive,-21570,
+914af33a-63d5-11e8-bcf1-0a2705229b82,01CO008,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,black or african american,Not Reported,,
+1833a52c-63d7-11e8-bcf1-0a2705229b82,20CO001,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1d23f919-63d7-11e8-bcf1-0a2705229b82,20CO007,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,black or african american,Not Reported,,
+24cb0fcb-63d6-11e8-bcf1-0a2705229b82,05CO044,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1aa5bc23-63d6-11e8-bcf1-0a2705229b82,05CO029,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,black or african american,Not Reported,,
+a359097e-63d6-11e8-bcf1-0a2705229b82,11CO043,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+da4722f0-63d6-11e8-bcf1-0a2705229b82,16CO011,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+8d8d42ae-63d5-11e8-bcf1-0a2705229b82,01CO001,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+0d04dd23-63d6-11e8-bcf1-0a2705229b82,05CO003,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+139a0253-63d6-11e8-bcf1-0a2705229b82,05CO015,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+cae72878-63d6-11e8-bcf1-0a2705229b82,14CO003,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+b554027e-63d6-11e8-bcf1-0a2705229b82,11CO062,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,asian,Not Reported,,
+9505127b-63d5-11e8-bcf1-0a2705229b82,01CO015,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+193b277a-63d6-11e8-bcf1-0a2705229b82,05CO028,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+a21c4839-63d6-11e8-bcf1-0a2705229b82,11CO042,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+b7dda873-63d6-11e8-bcf1-0a2705229b82,11CO072,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+8ed302f7-63d5-11e8-bcf1-0a2705229b82,01CO005,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+28873930-63d6-11e8-bcf1-0a2705229b82,05CO048,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+28d18f3d-63d7-11e8-bcf1-0a2705229b82,22CO004,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,male,white,Not Reported,,
+3535c42f-63d7-11e8-bcf1-0a2705229b82,27CO004,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,female,white,Not Reported,,
+d7b50f28-63d6-11e8-bcf1-0a2705229b82,16CO003,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+ba6da9c2-63d6-11e8-bcf1-0a2705229b82,11CO079,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+9fa2feac-63d6-11e8-bcf1-0a2705229b82,11CO037,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+1fd9f337-63d6-11e8-bcf1-0a2705229b82,05CO035,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,female,black or african american,Not Reported,,
+aca14699-63d6-11e8-bcf1-0a2705229b82,11CO053,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+3c9e4169-63d6-11e8-bcf1-0a2705229b82,09CO008,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+10c75345-63d6-11e8-bcf1-0a2705229b82,05CO007,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+443f2901-63d6-11e8-bcf1-0a2705229b82,09CO019,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,black or african american,Not Reported,,
+406db86e-63d6-11e8-bcf1-0a2705229b82,09CO014,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+95307d66-63d6-11e8-bcf1-0a2705229b82,11CO021,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1aa8ef3a-63d7-11e8-bcf1-0a2705229b82,20CO004,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+29bd5349-63d6-11e8-bcf1-0a2705229b82,05CO049,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+a5d790a6-63d6-11e8-bcf1-0a2705229b82,11CO045,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+b4188575-63d6-11e8-bcf1-0a2705229b82,11CO061,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+cc25d271-63d6-11e8-bcf1-0a2705229b82,14CO005,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1be99027-63d7-11e8-bcf1-0a2705229b82,20CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not reported,not reported,not reported,,,
+274d1bfb-63d6-11e8-bcf1-0a2705229b82,05CO047,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+8b89647a-63d6-11e8-bcf1-0a2705229b82,11CO005,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+350842fa-63d6-11e8-bcf1-0a2705229b82,06CO002,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,female,not reported,Not Reported,,
+964ccbbb-63d5-11e8-bcf1-0a2705229b82,01CO019,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+3f240d38-63d6-11e8-bcf1-0a2705229b82,09CO013,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+9287d60b-63d5-11e8-bcf1-0a2705229b82,01CO013,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+d173b7b0-63d6-11e8-bcf1-0a2705229b82,15CO001,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,female,asian,Not Reported,,
+123ebacf-63d6-11e8-bcf1-0a2705229b82,05CO011,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+8e4e8ba7-63d6-11e8-bcf1-0a2705229b82,11CO008,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+3a099f1d-63d6-11e8-bcf1-0a2705229b82,09CO005,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+9691960e-63d6-11e8-bcf1-0a2705229b82,11CO022,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+9273e183-63d6-11e8-bcf1-0a2705229b82,11CO019,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1e8db80f-63d6-11e8-bcf1-0a2705229b82,05CO034,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+2af8ac24-63d6-11e8-bcf1-0a2705229b82,05CO050,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+b9178503-63d6-11e8-bcf1-0a2705229b82,11CO077,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+b692a393-63d6-11e8-bcf1-0a2705229b82,11CO070,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,asian,Not Reported,,
+d903920d-63d6-11e8-bcf1-0a2705229b82,16CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+a9cb3450-63d6-11e8-bcf1-0a2705229b82,11CO051,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+2114ec5d-63d6-11e8-bcf1-0a2705229b82,05CO037,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,american indian or alaska native,Not Reported,,
+97f45829-63d6-11e8-bcf1-0a2705229b82,11CO027,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+3de574db-63d6-11e8-bcf1-0a2705229b82,09CO011,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+2a0e6d9d-63d7-11e8-bcf1-0a2705229b82,22CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+af1d550b-63d6-11e8-bcf1-0a2705229b82,11CO057,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+239c3712-63d7-11e8-bcf1-0a2705229b82,21CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,male,white,Not Reported,,
+a8735982-63d6-11e8-bcf1-0a2705229b82,11CO048,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+900e6eff-63d5-11e8-bcf1-0a2705229b82,01CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+99502308-63d6-11e8-bcf1-0a2705229b82,11CO030,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+6a478d6a-ec51-11e9-81b4-2a2ae2dbcce4,ColonRef,Other,Not Reported,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not reported,not reported,not reported,,,
+a725c269-63d6-11e8-bcf1-0a2705229b82,11CO047,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+9e5a2210-63d6-11e8-bcf1-0a2705229b82,11CO036,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,asian,Not Reported,,
+459e3b69-63d6-11e8-bcf1-0a2705229b82,09CO022,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,black or african american,Not Reported,,
+1d469d14-63d6-11e8-bcf1-0a2705229b82,05CO033,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+251e36a8-63d7-11e8-bcf1-0a2705229b82,21CO007,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+91102308-63d6-11e8-bcf1-0a2705229b82,11CO018,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+9791bd4c-63d5-11e8-bcf1-0a2705229b82,01CO022,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+add7dfac-63d6-11e8-bcf1-0a2705229b82,11CO054,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+ab0c12f7-63d6-11e8-bcf1-0a2705229b82,11CO052,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+175ccf46-63d6-11e8-bcf1-0a2705229b82,05CO026,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+8cea9947-63d6-11e8-bcf1-0a2705229b82,11CO007,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+41b23df2-63d6-11e8-bcf1-0a2705229b82,09CO015,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+0bc46cbd-63d6-11e8-bcf1-0a2705229b82,05CO002,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+0f9261c8-63d6-11e8-bcf1-0a2705229b82,05CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+1c11288a-63d6-11e8-bcf1-0a2705229b82,05CO032,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+d66d8cc1-63d6-11e8-bcf1-0a2705229b82,16CO002,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+b05c2057-63d6-11e8-bcf1-0a2705229b82,11CO058,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+260fb98a-63d6-11e8-bcf1-0a2705229b82,05CO045,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not reported,female,white,Not Reported,,
+238fa734-63d6-11e8-bcf1-0a2705229b82,05CO041,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+2254625e-63d6-11e8-bcf1-0a2705229b82,05CO039,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+d2b0df58-63d6-11e8-bcf1-0a2705229b82,15CO002,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,black or african american,Not Reported,,
+c9ab199d-63d6-11e8-bcf1-0a2705229b82,14CO002,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+93c55f6f-63d5-11e8-bcf1-0a2705229b82,01CO014,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+9bdc5a63-63d6-11e8-bcf1-0a2705229b82,11CO032,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,asian,Not Reported,,
+15d7eb12-63d6-11e8-bcf1-0a2705229b82,05CO020,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+a0e04ed9-63d6-11e8-bcf1-0a2705229b82,11CO039,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+2c346c06-63d6-11e8-bcf1-0a2705229b82,05CO053,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+9d1df687-63d6-11e8-bcf1-0a2705229b82,11CO033,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,asian,Not Reported,,
+2d701098-63d6-11e8-bcf1-0a2705229b82,05CO054,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+3b526aa4-63d6-11e8-bcf1-0a2705229b82,09CO006,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+42f4ed44-63d6-11e8-bcf1-0a2705229b82,09CO018,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+9a9977f0-63d6-11e8-bcf1-0a2705229b82,11CO031,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+8fb486ea-63d6-11e8-bcf1-0a2705229b82,11CO010,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,asian,Not Reported,,
+33c37478-63d6-11e8-bcf1-0a2705229b82,06CO001,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,hispanic or latino,male,not reported,Not Reported,,
+a494498b-63d6-11e8-bcf1-0a2705229b82,11CO044,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+196e410d-63d7-11e8-bcf1-0a2705229b82,20CO003,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+93d3df99-63d6-11e8-bcf1-0a2705229b82,11CO020,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,male,white,Not Reported,,
+b2dc3f43-63d6-11e8-bcf1-0a2705229b82,11CO060,Colon Adenocarcinoma,Colon,"['PDC000116', 'bbc1441e-57b8-11e8-b07a-00a098d917f8']",colorectal_pnnl,not hispanic or latino,female,white,Not Reported,,
+cae72878-63d6-11e8-bcf1-0a2705229b82,14CO003,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+24cb0fcb-63d6-11e8-bcf1-0a2705229b82,05CO044,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+9e5a2210-63d6-11e8-bcf1-0a2705229b82,11CO036,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,asian,Not Reported,,
+8e4e8ba7-63d6-11e8-bcf1-0a2705229b82,11CO008,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+b2dc3f43-63d6-11e8-bcf1-0a2705229b82,11CO060,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+a0e04ed9-63d6-11e8-bcf1-0a2705229b82,11CO039,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+b692a393-63d6-11e8-bcf1-0a2705229b82,11CO070,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,asian,Not Reported,,
+ba6da9c2-63d6-11e8-bcf1-0a2705229b82,11CO079,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+2c346c06-63d6-11e8-bcf1-0a2705229b82,05CO053,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+b7dda873-63d6-11e8-bcf1-0a2705229b82,11CO072,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+97f45829-63d6-11e8-bcf1-0a2705229b82,11CO027,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+b9178503-63d6-11e8-bcf1-0a2705229b82,11CO077,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+2d701098-63d6-11e8-bcf1-0a2705229b82,05CO054,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+2af8ac24-63d6-11e8-bcf1-0a2705229b82,05CO050,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+b05c2057-63d6-11e8-bcf1-0a2705229b82,11CO058,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+af1d550b-63d6-11e8-bcf1-0a2705229b82,11CO057,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+459e3b69-63d6-11e8-bcf1-0a2705229b82,09CO022,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,black or african american,Not Reported,,
+add7dfac-63d6-11e8-bcf1-0a2705229b82,11CO054,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+aca14699-63d6-11e8-bcf1-0a2705229b82,11CO053,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+ab0c12f7-63d6-11e8-bcf1-0a2705229b82,11CO052,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+b4188575-63d6-11e8-bcf1-0a2705229b82,11CO061,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+a494498b-63d6-11e8-bcf1-0a2705229b82,11CO044,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+260fb98a-63d6-11e8-bcf1-0a2705229b82,05CO045,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not reported,female,white,Not Reported,,
+95307d66-63d6-11e8-bcf1-0a2705229b82,11CO021,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+a725c269-63d6-11e8-bcf1-0a2705229b82,11CO047,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+9691960e-63d6-11e8-bcf1-0a2705229b82,11CO022,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+900e6eff-63d5-11e8-bcf1-0a2705229b82,01CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+914af33a-63d5-11e8-bcf1-0a2705229b82,01CO008,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,black or african american,Not Reported,,
+0e47d03c-63d6-11e8-bcf1-0a2705229b82,05CO004,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not reported,not reported,not reported,,,
+0f9261c8-63d6-11e8-bcf1-0a2705229b82,05CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+10c75345-63d6-11e8-bcf1-0a2705229b82,05CO007,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+123ebacf-63d6-11e8-bcf1-0a2705229b82,05CO011,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+139a0253-63d6-11e8-bcf1-0a2705229b82,05CO015,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+15d7eb12-63d6-11e8-bcf1-0a2705229b82,05CO020,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+193b277a-63d6-11e8-bcf1-0a2705229b82,05CO028,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+1aa5bc23-63d6-11e8-bcf1-0a2705229b82,05CO029,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,black or african american,Not Reported,,
+406db86e-63d6-11e8-bcf1-0a2705229b82,09CO014,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+41b23df2-63d6-11e8-bcf1-0a2705229b82,09CO015,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+42f4ed44-63d6-11e8-bcf1-0a2705229b82,09CO018,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+443f2901-63d6-11e8-bcf1-0a2705229b82,09CO019,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,black or african american,Not Reported,,
+1c11288a-63d6-11e8-bcf1-0a2705229b82,05CO032,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+1d469d14-63d6-11e8-bcf1-0a2705229b82,05CO033,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+33c37478-63d6-11e8-bcf1-0a2705229b82,06CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,male,not reported,Not Reported,,
+350842fa-63d6-11e8-bcf1-0a2705229b82,06CO002,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,female,not reported,Not Reported,,
+3a099f1d-63d6-11e8-bcf1-0a2705229b82,09CO005,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+3b526aa4-63d6-11e8-bcf1-0a2705229b82,09CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+3c9e4169-63d6-11e8-bcf1-0a2705229b82,09CO008,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+c86c67c3-63d6-11e8-bcf1-0a2705229b82,14CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not reported,not reported,not reported,,,
+c9ab199d-63d6-11e8-bcf1-0a2705229b82,14CO002,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+1833a52c-63d7-11e8-bcf1-0a2705229b82,20CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+196e410d-63d7-11e8-bcf1-0a2705229b82,20CO003,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+0bc46cbd-63d6-11e8-bcf1-0a2705229b82,05CO002,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+8ed302f7-63d5-11e8-bcf1-0a2705229b82,01CO005,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+8d8d42ae-63d5-11e8-bcf1-0a2705229b82,01CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+0d04dd23-63d6-11e8-bcf1-0a2705229b82,05CO003,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+29bd5349-63d6-11e8-bcf1-0a2705229b82,05CO049,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+28d18f3d-63d7-11e8-bcf1-0a2705229b82,22CO004,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,male,white,Not Reported,,
+2114ec5d-63d6-11e8-bcf1-0a2705229b82,05CO037,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,american indian or alaska native,Not Reported,,
+9d1df687-63d6-11e8-bcf1-0a2705229b82,11CO033,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,asian,Not Reported,,
+1be99027-63d7-11e8-bcf1-0a2705229b82,20CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not reported,not reported,not reported,,,
+a359097e-63d6-11e8-bcf1-0a2705229b82,11CO043,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+1d23f919-63d7-11e8-bcf1-0a2705229b82,20CO007,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,black or african american,Not Reported,,
+a21c4839-63d6-11e8-bcf1-0a2705229b82,11CO042,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+9bdc5a63-63d6-11e8-bcf1-0a2705229b82,11CO032,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,asian,Not Reported,,
+d66d8cc1-63d6-11e8-bcf1-0a2705229b82,16CO002,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+91102308-63d6-11e8-bcf1-0a2705229b82,11CO018,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+d903920d-63d6-11e8-bcf1-0a2705229b82,16CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+9a9977f0-63d6-11e8-bcf1-0a2705229b82,11CO031,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+3de574db-63d6-11e8-bcf1-0a2705229b82,09CO011,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+2254625e-63d6-11e8-bcf1-0a2705229b82,05CO039,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+239c3712-63d7-11e8-bcf1-0a2705229b82,21CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,male,white,Not Reported,,
+1e8db80f-63d6-11e8-bcf1-0a2705229b82,05CO034,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+9791bd4c-63d5-11e8-bcf1-0a2705229b82,01CO022,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+1aa8ef3a-63d7-11e8-bcf1-0a2705229b82,20CO004,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+28873930-63d6-11e8-bcf1-0a2705229b82,05CO048,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+3f240d38-63d6-11e8-bcf1-0a2705229b82,09CO013,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+251e36a8-63d7-11e8-bcf1-0a2705229b82,21CO007,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+d2b0df58-63d6-11e8-bcf1-0a2705229b82,15CO002,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,black or african american,Not Reported,,
+b554027e-63d6-11e8-bcf1-0a2705229b82,11CO062,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,asian,Not Reported,,
+1fd9f337-63d6-11e8-bcf1-0a2705229b82,05CO035,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,female,black or african american,Not Reported,,
+d7b50f28-63d6-11e8-bcf1-0a2705229b82,16CO003,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+9273e183-63d6-11e8-bcf1-0a2705229b82,11CO019,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+99502308-63d6-11e8-bcf1-0a2705229b82,11CO030,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+964ccbbb-63d5-11e8-bcf1-0a2705229b82,01CO019,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+8b89647a-63d6-11e8-bcf1-0a2705229b82,11CO005,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+9505127b-63d5-11e8-bcf1-0a2705229b82,01CO015,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+d173b7b0-63d6-11e8-bcf1-0a2705229b82,15CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,female,asian,Not Reported,,
+a8735982-63d6-11e8-bcf1-0a2705229b82,11CO048,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+c0b461af-63d6-11e8-bcf1-0a2705229b82,13CO001,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not reported,not reported,not reported,,,
+3535c42f-63d7-11e8-bcf1-0a2705229b82,27CO004,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,hispanic or latino,female,white,Not Reported,,
+8fb486ea-63d6-11e8-bcf1-0a2705229b82,11CO010,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+238fa734-63d6-11e8-bcf1-0a2705229b82,05CO041,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+93d3df99-63d6-11e8-bcf1-0a2705229b82,11CO020,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+8cea9947-63d6-11e8-bcf1-0a2705229b82,11CO007,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+175ccf46-63d6-11e8-bcf1-0a2705229b82,05CO026,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+a5d790a6-63d6-11e8-bcf1-0a2705229b82,11CO045,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+da4722f0-63d6-11e8-bcf1-0a2705229b82,16CO011,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,male,white,Not Reported,,
+cc25d271-63d6-11e8-bcf1-0a2705229b82,14CO005,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+2a0e6d9d-63d7-11e8-bcf1-0a2705229b82,22CO006,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,white,Not Reported,,
+9fa2feac-63d6-11e8-bcf1-0a2705229b82,11CO037,Colon Adenocarcinoma,Colon,"['PDC000109', 'bb67ec40-57b8-11e8-b07a-00a098d917f8']",colorectal_vu,not hispanic or latino,female,asian,Not Reported,,
+905a9e60-75b1-4c53-9905-e2d3d171da7b,C3N-03173,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-23662,
+71bdfdcb-358b-446b-86fa-7a3879bb460e,C3N-02944,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Alive,-22648,
+a251b23a-ae5b-4319-ab5b-ad425071eac3,C3N-01011,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Alive,-28289,
+6fa52ee6-5dc2-4bed-8f6b-c6d4471fb81a,C3N-03007,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-21772,58
+a3e3b167-2d2b-462d-9d3b-849a5f7ddea6,C3N-01166,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-22892,1170
+25bac97e-ae38-44eb-b61a-1d8d383f0085,C3L-01637,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-28706,715
+622bfcbb-af4c-4893-8e1d-c6f65cbb8da8,C3L-01052,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-23696,743
+301c2377-cb9d-43d4-bf4b-3cf478fc2197,C3N-04283,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-24187,1
+669af5fb-0ace-47d8-ad5b-40ab44ada190,C3L-00928,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-21418,761
+d21fa2fa-9a2d-4baa-b7d8-601b906a16c7,C3N-03069,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-18530,20
+bbd98dcb-2e48-48d5-9a23-a90e36ef9bb4,pooled sample,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+c531b8d3-736b-4f87-b4f5-0234f5475cf5,C3N-03839,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Alive,-19956,
+5f0b87e2-c427-4465-9721-2c1e8923888f,C3N-02573,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Alive,-15316,
+fc08d3b9-1ea0-4926-922e-d4f4d4a77767,C3L-03635,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-23274,854
+31d14399-b60b-4d00-ad37-72a55ec733df,C3L-07036,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,male,white,Not Reported,,
+cfd7ba3c-afab-465b-a121-c951b3fca259,C3N-01719,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-23073,547
+e7ee4f4f-418f-4f96-aed6-0856d94f02f2,C3L-00189,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-24958,1036
+fe3b4978-c450-4943-bf87-e5974562f62f,C3L-02112,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-24455,1747
+58b42d9e-bba2-4a1f-9066-77586c0d6eb9,C3N-02768,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-17037,430
+d13f4bd1-0510-46a7-bd51-90546b8bfe4c,C3L-03630,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Alive,-28674,
+ebe993cd-c210-459b-85c6-30c03fcca5f0,C3N-03439,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-20776,458
+72dabc4e-ff33-4ecb-8676-234e6ae27a8b,C3L-00401,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-22991,1262
+92543483-685d-4fa4-ac04-870bf7161ec9,C3N-01716,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-18343,335
+51b3ee8c-69b9-45d9-a24a-0402b5f55601,QC2,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+47f2962e-1c0c-49da-bcd4-93d9c1874ec2,C3L-03628,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-25282,596
+fdc414bb-04a1-4990-8921-baa6c205f1a9,C3N-03430,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-19939,39
+df0ee52d-df43-401b-909e-ca25f708ae64,C3L-03395,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-28498,88
+9a2f657d-5c27-40db-9d87-ffabb7f6b9b6,C3N-01380,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-24117,400
+daabb823-5e5e-4446-b14b-6962cd3d1111,C3L-04495,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-13477,288
+df77dbcd-94d7-4a66-b15c-9564f86ee42e,C3N-02998,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-23734,650
+e146ea33-991d-40e0-81c1-d33f9c719f62,C3L-00017,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-25349,
+81d2f222-b6ea-4593-9ccd-1619546ab73b,C3L-00622,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-26616,1041
+7e9a404c-2b80-4ea6-aa7c-7ebc02493cdc,C3N-01714,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23163,435
+8d4aad8e-229d-4d7a-9244-b6343cb2fb5a,C3L-03123,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Alive,-22137,
+d10e77a2-fc25-463f-b3f4-ecb738069aed,C3N-02010,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,black or african american,Alive,-22742,
+3406ba91-a386-4e61-931e-a6eceea00123,C3N-01715,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-22534,109
+48c5ef63-81a1-497e-89fe-21f96813de49,C3L-01453,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,hispanic or latino,male,white,Alive,-25473,
+320df578-47ba-41a8-9991-a4972ce48810,C3L-01054,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-14036,860
+d9465f75-1a21-4c4f-8b6f-14e0600dffda,C3N-03840,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-21749,1065
+2657813b-ca46-4047-889c-f98ed05f2796,C3N-00512,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-15559,1006
+2cb645f4-0733-48c8-9021-c880ebf23c4b,C3L-04475,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-28419,893
+08a154c5-ea51-4f89-810d-3e125a052c1e,QC6,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+c89444ff-1751-41b1-af47-b96e36037a65,C3L-02109,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Alive,-28885,
+656b9d5a-ac9b-419d-8300-52b31eb56be6,C3N-00198,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-20306,
+6abdfa5b-ab89-4ac9-974f-427a4007a133,C3L-04848,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-26284,196
+edde06b2-4a6b-4e5b-9be1-33d6efe922bc,C3N-03061,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-22974,139
+b5f71e03-9c44-48ee-99b8-cf0fe4cb4dfe,C3L-02809,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-30685,68
+78081bea-6b0b-404b-b9a1-f64ced91f728,C3L-02610,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-29536,190
+354aa1db-a43e-4972-a704-6536c164b6f5,C3L-01689,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-22672,594
+ef64289b-f333-49f6-a05b-043ed6455e10,C3N-02971,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-28635,70
+bb7a9ee6-ba4c-4052-b826-d966016d90d2,C3N-03428,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23159,286
+61fe740d-ae0d-4541-8fae-ab0c33b0f708,C3L-00277,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-25515,610
+4a4e4119-73e6-468a-8e6b-05acf4c1b7f5,C3N-01168,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-22172,415
+18b64ae1-2fe2-40d2-9126-bd1ed2ce4e95,C3L-02890,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-24050,1007
+f6d401bb-8001-4157-a2ff-82fc946ba933,C3N-00709,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Not Reported,,
+83672c84-e1f2-413a-8e9d-8c13d45f5291,C3N-01383,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-29417,791
+1fc52010-b6e7-4f19-9cad-afb7bb55d487,C3N-03211,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-16048,286
+bc01b9f6-2355-47c8-bc06-6ad5865804ad,C3L-03394,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-24110,635
+dfbdbf47-7379-4d98-b6e4-175cd09ff0a4,C3L-04479,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-24207,1590
+77e6c9de-2a62-4c1f-9fb0-f07e86c9b6de,C3L-01051,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Alive,-22192,
+04606c9c-ff6f-4acb-a9bd-e0122bf19ee1,C3L-01687,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-28838,376
+bcd1c547-3d14-48f4-9398-a775697cbcfc,C3L-03388,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-24887,11
+9955c013-c8fd-4315-8946-f0c41edb024d,C3L-03350,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23078,613
+0d000f9c-f76f-42a0-b88b-9a9054919adb,C3N-02589,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-26008,398
+5a3fd9f7-cd11-4ed9-b122-3096ba0e93a5,C3L-01124,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Alive,-25921,
+96501b19-4b91-49c1-beff-06b3c46dbc3f,C3N-03665,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23168,1082
+b389c04b-e42a-4143-970b-f39cc6882ba0,C3N-01997,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-23169,1035
+a3cbf3f4-b398-43c8-b323-c4e07c04d8d7,C3N-03884,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-23590,680
+becc9d95-b799-4238-ab2e-0da05d48179a,C3N-03780,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-25275,20
+ed932161-7b37-4bc4-aa09-b8adeb044f17,C3L-01053,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-27798,191
+ebab18a1-9760-4e31-8255-23082ad5c097,C3N-01388,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-19447,811
+45e072c0-3603-46f9-a86b-3d8492532eef,C3L-03371,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-19582,560
+9a0345e6-ba08-4f07-b768-79a039ba14f2,C3L-00819,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-27104,603
+f4c7d3bb-f214-4fb6-b2d7-bc173b715220,C3L-02115,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-29237,723
+d26a6b06-5d02-4220-9ec3-5788c0b643ec,C3L-02701,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-26345,243
+33f484e3-9bf2-4985-8999-567e3022ac15,C3N-04282,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-27699,303
+9bb79b5f-fa75-4d05-8a23-eda606a6cfdc,C3N-00249,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-26108,1590
+28c67334-e064-4692-8868-add8d830e983,C3L-04853,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-31222,279
+65786c81-1ca9-4836-89a4-d80d7dbf773c,C3N-00514,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-22057,1874
+10784784-5101-4f5e-aefa-1311e0000fdf,C3N-01900,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-19495,831
+dc5c98c3-f062-4a93-917f-1854af37c3f4,C3N-00511,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-16455,991
+c524794e-ccd7-49ae-a005-eba41cfdb6b3,C3L-03515,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,not reported,Not Reported,,
+e9f88e5c-8015-4c3d-ada9-6001e0fba4a0,QC3,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+0f06151e-53a2-4573-84c3-76e1b5c0ce34,C3N-00518,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-25462,427
+15004c8d-69c0-4772-8f3b-d88691fe8d52,C3L-07032,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,male,white,Not Reported,,
+0fdc2d7a-e945-4c3b-9df5-5745197e1513,C3L-02899,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-26705,91
+ddc466c8-7e8f-453c-920d-25ebb56be20f,C3L-00599,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-22781,1352
+28294208-46e9-4581-ae2f-27f239f8ae78,C3N-01167,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-28149,754
+ca63469f-6f24-47be-8333-ebd44c3f831d,C3N-00513,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23121,394
+c4452d81-fb01-488e-998e-032af8453e4b,C3L-02118,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-24832,632
+a415f239-a6ca-451d-81eb-196a7e7183d2,C3L-00598,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-22466,422
+da3a693f-01f0-4d7b-ae52-95c5438733d8,C3N-03670,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-22035,1533
+4b51d6c0-4ac8-43db-8e4f-f7152318874d,C3N-03039,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Not Reported,,
+109369bc-354e-46c4-aa26-69d13194b085,C3L-00881,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-29330,
+86b39157-8b7f-4b7a-a79e-e73d538b7a06,C3N-00303,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-24091,599
+890f123e-71fe-4f22-9533-1019138d6aa3,C3L-00102,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-15616,249
+69987aea-3042-4eb0-a30f-361caddde015,C3N-03853,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-17976,393
+43cb11a0-b404-4a33-88be-0fa826110ab6,C3N-02295,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-20557,371
+a4b96c1c-6508-4439-84fe-39e3c5c37a79,KoreanReference3,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+ac628f19-20c7-420e-8a7c-10db8ab77656,C3N-00436,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-25422,718
+dd7e1d91-d297-4933-b37c-4d69bec00cc7,WU-pooled sample,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+ca8c623c-2c48-4dfa-b9a5-c3522d9c249f,KoreanReference2,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+4c2fc223-0f54-4143-a379-290552598b6d,C3N-00957,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-27089,
+588c0d27-fc63-4f2b-904a-09cd2507fc00,C3L-04473,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-24550,290
+9e815dee-cfa4-46a0-a284-741ca0547c92,C3L-03639,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-27761,246
+088e15dd-a61d-4b2e-959c-9120060a4666,C3L-07035,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,male,Unknown,Not Reported,,
+c955e0ee-8b00-48ab-9a48-1094f1f11c06,C3N-04126,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-15708,348
+e59ead0d-ee08-4c0e-bf73-8953587b49fb,C3L-04027,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Alive,-25375,
+6abc5a95-7e95-4706-93f4-8ab0eac7d60e,C3L-00640,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Alive,-21667,
+5f38c09b-b5e6-4142-b3b0-dee4cf878e06,C3N-01012,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-25953,
+e75de5e1-5746-404a-adfe-52d1402f0e08,C3N-01379,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-23775,971
+1641e669-51eb-420d-92e3-cec18d23ea0d,C3N-03666,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-23228,701
+7ff83eb6-a98a-4cf5-b5e6-22479ad984dd,C3L-04072,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,black or african american,Dead,-20413,225
+8202a1de-9592-456a-a318-6bc1fd56e0a7,C3L-03129,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Alive,-24917,
+f9149c15-2d78-4d42-815b-53fdbef4ed6b,C3L-01036,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-23457,881
+fdfb73d7-a1c1-4c3a-8a7b-bb9157af50d2,C3N-01165,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-23060,241
+fae3dcf4-0303-4d82-8be4-c388ab49e7e6,C3N-03006,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Alive,-23492,
+53097cb9-d461-4ad6-b7a2-a8d57520222a,C3L-03514,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+c45a1331-dab4-4ba1-8237-5dc4a6991f6a,C3L-01037,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-15630,300
+d7e4e6ae-165e-44c5-943d-7a58f9d37931,C3N-04284,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-29323,8
+a2391397-3980-463e-8d1b-2290a993893b,C3N-03426,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-24994,123
+9530b47e-9017-4dec-bd62-60ae4386aed9,C3L-03356,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Alive,-26098,
+4fc8d10b-c3c4-4137-881a-59148033b259,C3N-03086,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-25502,760
+07e96995-726b-4b35-8fde-49fa5d6a1758,C3N-00517,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-25407,1142
+05e50d4c-1271-453c-a6c4-39a3565073ef,C3L-01328,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-26268,
+1ce589d3-f145-422b-8f7a-85f1e608fc39,C3L-01598,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-26697,913
+b2412ff4-1532-4ace-b1ef-78ef45f492f2,C3N-04119,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-19826,305
+0774e352-a193-4c70-8351-11f40108fd03,C3N-02585,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-23804,1189
+fc5b03d9-405b-4514-9a4b-4b64761c48fd,C3L-02606,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Dead,-25148,403
+814e1879-8a9a-4b1f-8533-91edbfcaad7a,C3L-00589,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-29322,
+48772971-6230-4918-b9a7-dd1b5af9aade,C3L-02613,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-19066,211
+bf0af6d2-0d83-410f-b2cc-df04521f05e3,KoreanReference1,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+3beac08e-60f1-4ea2-85c9-f7bef1efb04b,QC4,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+65961f24-e423-4dc7-b416-ec8f858ca39c,C3L-02604,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-31007,118
+dc7b5f90-ea1e-4e4d-8445-ec2950cf5d55,C3L-03743,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-26051,732
+3639f4a9-758d-4393-86d5-8c3222d0e869,C3N-01502,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-27522,
+d9eff2f2-2098-497d-91f2-f89165e25033,C3L-03632,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-27050,1481
+71565a38-0036-4748-b4e4-e4b921ad1f72,C3N-02579,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,asian,Dead,-18922,358
+fcfe466a-ca53-4a30-94b1-f071130286db,C3N-03440,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Alive,-19891,
+68141a72-2915-4223-a078-df4c0b3d3711,C3N-01382,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-27136,764
+b11be1d7-8f96-4d28-b965-7ee2891291c6,C3L-04080,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-25862,20
+bca26d15-e38c-4220-a193-143c5496d20a,C3L-01971,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Dead,-24359,276
+f78c3797-dd47-4d93-aacd-1d406cfcf36e,C3L-02116,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-24692,1063
+3d65abbe-5af5-4b1f-b887-43ac4f9fac6b,C3N-00302,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-21532,323
+95fc8706-06da-4652-bcbb-0c02c4faeedd,C3N-00516,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-25164,1152
+0b2864ca-d12c-42bf-a74e-280213ca525f,QC5,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+5aff3251-f272-4dcc-8bbd-b4ee767469f4,C3L-00625,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-12736,1198
+c8f56efe-fb3d-4f96-88d2-1c0e3b7bdd38,C3L-01031,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,other,Alive,-23784,
+234b3e4e-525d-438f-a71a-4c007ba6ccbb,C3L-01662,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,female,white,Dead,-21979,344
+cf30c228-aa32-45e8-8b46-fed54dac650e,C3N-02940,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-23550,1209
+b4430371-3c29-47e0-844f-4dba28914afa,WU-PDA1,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+5f9e7f05-b8d1-4dbc-88f0-8b057ef87eea,C3N-01998,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-25293,186
+81d7909d-4c3a-40ed-8283-0cbc599ac942,C3N-01381,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-15744,455
+a940e7fe-84e0-41f7-87fa-d188db8435f1,C3L-02463,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-23313,
+e3cf305c-f83f-474a-a095-542970bbf3c8,C3N-02592,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-23318,294
+9398b8ff-6dbe-4ea5-b74b-36a8ec172acf,C3L-07034,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,male,white,Not Reported,,
+23434bf3-f0eb-4070-964e-0c9a3ba61140,C3N-03000,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-20844,487
+f48ec6e9-5efc-41a8-8fa4-4508b31ef9c2,C3L-02897,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not hispanic or latino,male,white,Alive,-29507,
+d7597e55-49af-4dc7-b471-3d08a801c331,C3N-01907,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-22813,440
+54bd49cd-0642-47b7-b56c-70c1dc358435,QC1,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,not reported,not reported,,,
+bad5524f-7eee-4486-bafb-97b745f66613,C3L-03513,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,female,Unknown,Not Reported,,
+d99c4c13-8b14-4340-bb4f-eff79d433c55,C3L-07033,Other,Not Reported,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,Unknown,male,white,Not Reported,,
+66180ee3-f012-4749-97a4-fb622843bd1a,C3N-03190,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,asian,Dead,-11659,398
+f61386d0-dcb2-4d44-adf7-7b2cdae98b7c,C3N-03754,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,white,Dead,-16266,815
+307fd220-d518-40ae-8eea-8cdc3476f145,C3N-01375,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,female,white,Dead,-25895,143
+344f4536-d2cf-4162-99d8-dcc40972c80b,C3L-01703,Pancreatic Ductal Adenocarcinoma,Pancreas,"['PDC000270', '1cf6e56a-02f4-4687-8f87-ab37b0f41960']",pancreatic,not reported,male,other,Dead,-22902,287
