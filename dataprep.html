@@ -40,81 +40,349 @@ body {
 
 <main>
       <h2>Data Preparation and EDA</h2>
-      <p>This table organizes the various datasets sourced for the project, with links to the host sites/APIs, descriptions, and respective pages with EDA and cleaning processes.</p>
+      <p>This table organizes the various datasets sourced for the project, with links to the host sites/APIs, descriptions, and respective pages with EDA and cleaning processes.
+        Below is an image gallery, with thumbnails and links for raw and cleaned data examples, as well as visualizations from the EDA process (these are also shown in the Jupyter notebooks linked 
+        in the first table.) Some raw and cleaned data was too large to upload to Github, so larger files are hosted <a href="https://drive.google.com/file/d/1SWhrnxB0SzVFwRH7GG89Q4uyqFd6BnlA/view?usp=drive_link">here on Google Drive</a>. 
+      </p>
       <table border="1" cellpadding="5" cellspacing="0">
         <tr>
           <th align="left">Dataset</th>
           <th align="left">Description</th>
           <th align="left">Source</th>
-          <th align="left">EDA/Cleaning</th>
+          <th align="left">EDA/Cleaning (HTML Jupyter Notebook)</th>
           <th align="left">Data & Code</th>
         </tr>
         <tr>
           <td>Clinical Case Data from the NIH Proteomic Data Commons (PDC)</td>
-          <td>Patient-level demographic, risk factor, and protein expression data. Pulled by <a href="https://proteomic.datacommons.cancer.gov/pdc/publicapi-documentation/#!/Case/allCases">API</a></td>
+          <td>Patient-level demographic, risk factor, and protein expression data. Pulled by <a href="https://proteomic.datacommons.cancer.gov/pdc/publicapi-documentation/#!/Case/allCases">API</a>
+          </td>
           <td><a href="https://proteomic.datacommons.cancer.gov/pdc/">PDC</a></td>
-          <td><a href="pdc.html">API script, EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/pdc_data/PDC_data_pull_2.html">API Calls and Parsing/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/pdc_data">Github</a></td>
         </tr>
         <tr>
           <td>500 Cities Health Data</td>
           <td>Health-related data for 500 US cities, including lifestyle factors and health outcomes.</td>
           <td><a href="https://www.cdc.gov/500cities/">CDC 500 Cities</a></td>
-          <td><a href="500cities.html">500 Cities EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/500_cities_health_data/500_cities_data_cleaning.html">500 Cities EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/500_cities_health_data">Github</a></td>
         </tr>
         <tr>
           <td>Genomic Data from TCGA</td>
           <td>Genomic and clinical data for various cancer types from The Cancer Genome Atlas.</td>
           <td><a href="https://www.cancer.gov/tcga">TCGA Data</a></td>
-          <td><a href="dataprep.html#tcga">TCGA EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/TCGA_genomics_data/tcga_clinical.html">TCGA EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/TCGA_genomics_data">Github</a></td>
         </tr>
 
         <tr>
           <td>Synthetic Pancreatic Cancer Data</td>
-          <td>2,000 pt simulated dataset with cancer subtypes, genetic mutations, treatment modes, and other clinical features</td>
+          <td>2,000 pt simulated dataset with cancer subtypes, genetic mutations, treatment modes, and other clinical features. 
+          </td>
           <td><a href="https://www.kaggle.com/datasets/zkskhurram/pancreatic-cancer-global-clinical-and-risk-factor"> Kaggle</td>
-          <td><a href="pancreatic.html">EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/pancreatic_cancer_global_dataset_kaggle/synthetic_pancreatic_data.html">EDA/Cleaning</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/pancreatic_cancer_global_dataset_kaggle">Github</a></td>
         </tr>
         <tr>
           <td>NIH PubMed Abstracts</td>
           <td>Abstracts from PubMed related to certain cancer prognoses for qualitative use or NLP. Pulled by <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi">API</a>.</td>
           <td><a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></td>
-          <td><a href="pubmed.html">API script, EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/nih_pubmed_abstracts/pubmed_abstracts.html">API Calls/Parsing, Data Export</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/nih_pubmed_abstracts">Github</a></td>
         </tr>
         <tr>
           <td>EPA Annual Air Quality Data</td>
           <td>Data on air quality and environmental factors from the Environmental Protection Agency (EPA).</td>
           <td><a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Meta">EPA Data</a></td>
-          <td><a href="epa.html">EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/EPA_air_quality_data/epa_air_data_notebook.html">Cleaning and EDA</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/EPA_air_quality_data">Github</a></td>
         </tr>
         <tr>
           <td>USGS Pesticide Use Data</td>
           <td>Data on pesticide use from the United States Geological Survey (USGS).</td>
           <td><a href="https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/">USGS Data</a></td>
-          <td><a href="usgs.html">EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/USGS_pesticide_data/usgs_pest_2002.html">Cleaning and EDA</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/USGS_pesticide_data">Github</a></td>
         </tr>
         <tr>
           <td>National Cancer Institute State Cancer Profiles</td>
           <td>Data on cancer incidence and mortality rates by state from the National Cancer Institute.</td>
           <td><a href="https://statecancerprofiles.cancer.gov/incidencerates/index.php">NCI Data</a></td>
-          <td><a href="nci.html">EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/cancer_incidence_data_2023/state_cancer_incd.html">Cleaning and EDA</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/cancer_incidence_data_2023">Github</a></td>
         </tr>
         <tr>
           <td>USDA Economic Research Service Data</td>
           <td>Reports on unemployment and education levels</td>
           <td><a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">USDA Data</a></td>
-          <td><a href="usda.html">EDA/Cleaning</a></td>
-          <td><a href="https://github.com/dylanhudson/CSCI5612-ML">Github</a></td>
+          <td><a href="data/USDA_economic_research_data/usda_ers_data.html">Cleaning and EDA</a></td>
+          <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/USDA_economic_research_data">Github</a></td>
         </tr>
       </table>
+      <h3>Image Gallery</h3>
+      <p>Below are some examples of the raw and cleaned data, as well as visualizations from the EDA process.</p>
+      <table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th align="left">Dataset</th>
+    <th align="left">Data Images</th>
+    <th align="left">Visualizations</th>
+  </tr>
 
+  <tr>
+    <td>Clinical Case Data from the NIH Proteomic Data Commons (PDC)</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/pdc_data/raw_API_data_PDC_studies.png">
+          <img src="data/pdc_data/raw_API_data_PDC_studies.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/pdc_data/pdc_clean_example.png">
+          <img src="data/pdc_data/pdc_clean_example.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/PDC_cases_by_primary_Site.png">
+          <img src="data/data_visualizations/prep_and_eda/PDC_cases_by_primary_Site.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization: Cases by Primary Site</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+  <tr>
+    <td>500 Cities Health Data</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/500_cities_health_data/500_cities_raw.png">
+          <img src="data/500_cities_health_data/500_cities_raw.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/500_cities_health_data/500_cities_clean.png">
+          <img src="data/500_cities_health_data/500_cities_clean.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/500_cities_CHD_map.png">
+          <img src="data/data_visualizations/prep_and_eda/500_cities_CHD_map.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization: 500 Cities CHD Map</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/500_cities_prevalence_graph.png">
+          <img src="data/data_visualizations/prep_and_eda/500_cities_prevalence_graph.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization: 500 Cities Prevalence Graph</figcaption>
+    </figure>
+    </td>
+  </tr>
+  <tr>
+    <td>Genomic Data from TCGA</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/TCGA_genomics_data/tcga_coad_raw.png">
+          <img src="data/TCGA_genomics_data/tcga_coad_raw.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+       <a href="data/TCGA_genomics_data/tcga_coad_clean.png">
+          <img src="data/TCGA_genomics_data/tcga_coad_clean.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/mean_aneuploidy_score_subtype.png">
+          <img src="data/data_visualizations/prep_and_eda/mean_aneuploidy_score_subtype.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization: Mean Aneuploidy Score by Subtype</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/aneuploidy_overall_survival.png">
+          <img src="data/data_visualizations/prep_and_eda/aneuploidy_overall_survival.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+       <figcaption>Visualization: Aneuploidy Overall Survival</figcaption>
+      </figure>
+    </td>
+  </tr>
+  <tr>
+    <td>Synthetic Pancreatic Cancer Data</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/pancreatic_cancer_global_dataset_kaggle/raw_data_pancreatic_synthetic.png">
+          <img src="data/pancreatic_cancer_global_dataset_kaggle/raw_data_pancreatic_synthetic.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/synth_pan_tumor_size_smoking.png">
+          <img src="data/data_visualizations/prep_and_eda/synth_pan_tumor_size_smoking.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization - Smoking and Tumor size</figcaption>
+      </figure>
+    </td>
+  </tr>
+  <tr>
+    <td>NIH PubMed Abstracts</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/nih_pubmed_abstracts/raw_data_pubmed.png">
+          <img src="data/nih_pubmed_abstracts/raw_data_pubmed.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+  </tr>
+  <tr>
+    <td>EPA Annual Air Quality Data</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/EPA_air_quality_data/aq_data_raw.png">
+          <img src="data/EPA_air_quality_data/aq_data_raw.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/EPA_air_quality_data/aq_data_cleaned.png">
+          <img src="data/EPA_air_quality_data/aq_data_cleaned.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/top_aq_metrics.png">
+          <img src="data/data_visualizations/prep_and_eda/top_aq_metrics.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization: Pollutant Concentrations</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+  <tr>
+    <td>USGS Pesticide Use Data</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/USGS_pesticide_data/raw_usgs_pest.png">
+          <img src="data/USGS_pesticide_data/raw_usgs_pest.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/USGS_pesticide_data/usgs_clean_pest.png">
+          <img src="data/USGS_pesticide_data/usgs_clean_pest.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/glyphosate_dist_county.png">
+          <img src="data/data_visualizations/prep_and_eda/glyphosate_dist_county.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization - Glyphosate Distribution by County</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/atrazine_dist_count.png">
+          <img src="data/data_visualizations/prep_and_eda/atrazine_dist_count.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization - Atrazine Distribution by County</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+  <tr>
+    <td>National Cancer Institute State Cancer Profiles</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/cancer_incidence_data_2023/state_cancer_raw.png">
+          <img src="data/cancer_incidence_data_2023/state_cancer_raw.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/cancer_incidence_data_2023/state_cancer_cleaned.png">
+          <img src="data/cancer_incidence_data_2023/state_cancer_cleaned.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/Cancer_incd_rate_map.png">
+          <img src="data/data_visualizations/prep_and_eda/Cancer_incd_rate_map.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization - Cancer Incidence Rate Map</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+  <tr>
+    <td>USDA Economic Research Service Data</td>
+    <td style="display: flex; gap: 8px;">
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/USDA_economic_research_data/usda_ers_raw.png">
+          <img src="data/USDA_economic_research_data/usda_ers_raw.png" alt="Raw Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/USDA_economic_research_data/usda_ers_clean.png">
+          <img src="data/USDA_economic_research_data/usda_ers_clean.png" alt="Clean Ex."
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/data_visualizations/prep_and_eda/unemployment_dist_county_2000s.png">
+          <img src="data/data_visualizations/prep_and_eda/unemployment_dist_county_2000s.png" alt="Visualization"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Visualization - Unemployment Distribution by County</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+</table>
 
 
 </main>
