@@ -22,7 +22,7 @@ li a:hover {
 /* vertical line to separate nav bar from content */
   
   border-right: #555555 solid 1px;
-  background-color: #d6cccc;
+  background-color: #d5d1d1;
   overflow: hidden;
 }
 
@@ -44,5 +44,5 @@ body {
   font-size: 1.2rem;
   font-family: 'Alegreya', 'Times New Roman', Times, serif, sans-serif;
   margin: 20px;
-  background-color: #d6cccc;
+  background-color: #d5d1d1;
 }
