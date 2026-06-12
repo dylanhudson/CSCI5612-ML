@@ -27,6 +27,7 @@ body {
   <li><a href="introduction.html">Introduction</a></li>
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
+  <li><a href="pca.html">PCA</a></li>
   <li><a href="arm.html">Association Rule Mining</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
@@ -40,7 +41,85 @@ body {
 
 <main>
       <h2>Clustering</h2>
-      <p>Page under construction</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
+      <p>Clustering is an unsupervised machine learning process that creates and partitions groups of data points based on similarity criteria
+        e.g. minimized distance between points, or shared features. These methods are unsupervised, meaning the data is not labeled.
+         Partitional clustering methods like k-means divide the data such that each sample/point belongs to one cluster, which is shared by the points 
+         it is most similar to. Similarity is often defined as a minimized distance metric, such as the Euclidean distance (straight-line) between poitns, 
+         or other vector norms, for continuous data. For categorical data, similarity might be defined by shared features, 
+         which can be measured by metrics like Hamming distance or Levenstein distance. 
+         <br>
+         Heirarchical clustering creates a "dendrogram" of cluster relationships, where a predicate relationship exists
+         between child and parent cluster (i.e., a child cluster is also a member of the parent cluster). This necessitates calculating similarity between 
+         clusters as well as the individual points, which can be done by methods such as single-linkage (the cluster distance being defined as the shortest distance between two points, one in each cluster),
+          complete-linkage (greatest distance between points in the clusters), or average-linkage (mean distance between, i.e each point's distance to each other point, averaged).
+          <br>
+         
+         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Algoritmo_K-means_usado_na_predi%C3%A7%C3%A3o_da_base_de_dados_de_flores_de_%C3%ADris.svg/960px-Algoritmo_K-means_usado_na_predi%C3%A7%C3%A3o_da_base_de_dados_de_flores_de_%C3%ADris.svg.png" alt="K-means clustering on the Iris dataset" style="width:250px; height:250px; object-fit: cover; float: left; margin-right: 20px;" >
+         <figcaption>K-means clustering on the classic Iris dataset: (Source: Wikimedia Commons)</figcaption>
+        </figure>
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Dendrogram2.png/960px-Dendrogram2.png" alt="Dendrogram from heirarchical clustering" style="width:250px; height:250px;">
+         <figcaption>An example of a dendrogram created from heirarchical clustering: (Source: Wikimedia Commons)</figcaption>
+        </figure>
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Data Prep</p>
+      <p>
+        To examine incidence data with socioeconomic features, the per-county data for indcidence rates, unemployment, and education were merged together, joining on FIPS. As clustering necessitates
+        numeric data, all the categorical features were dropped, and rows with missing values were dropped 
+        <figure>
+          
+          <img src="data/data_visualizations/clustering/clustering_screenshot.png" alt="Data after merging, dropping categorical features, and dropping rows with missing values." style="width:550px; height:150px; object-fit: cover;">
+          <figcaption>Data after merging, dropping categorical features, and dropping rows with missing values.</figcaption> Data can be accessed <a href="data/incd_socioeconomic_joined.csv">here.</a>
+        </figure>
+        The data was then standardized using the StandardScaler from sklearn, prior to running K-means and Heirarchical clustering.
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+      <p>The Jupyter notebook can be found <a href="data/incidence_analysis.ipynb">here.</a> The HTML version can be found <a href="data/incidence_analysis.html">here.</a></p>
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+      <p>
+        The intial heirarchical clustering dendrogram suggested that 4, 6, or 7 cluster could be reasonable (we can see if we drew a line across the dendrogram at the main points of cluster separation, we would count that many lines.)
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <img src="data/data_visualizations/clustering/incd_dendrogram.png" alt="Dendrogram from heirarchical clustering" style="width:550px; height:350px; object-fit: cover;">
+          <figcaption>Dendrogram from heirarchical clustering.</figcaption>
+        </figure>
+        K-means clustering was then run with k=4, k=6, and k= 7, and the mean feature values for each cluster were visualized with heatmaps. 
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/data_visualizations/clustering/heatmaps_cluster_means_incd_data.png">
+          <img src="data/data_visualizations/clustering/heatmaps_cluster_means_incd_data.png" alt="Heatmap of mean feature values for each cluster" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Heatmap of mean feature values for each cluster, for each cluster set (click image for full size) </figcaption>
+        </figure>
+         
+
+
+The clusters were also plotted on a map of the US by coloring each county
+        per the cluster assignment. k=4 for cluster set 1, k=6 for cluster set 2, and k=7 for cluster set 3.
+
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/data_visualizations/clustering/kmeans_clusters_maps.png">
+          <img src="data/data_visualizations/clustering/kmeans_clusters_maps.png" alt="Maps of cluster assignments for each cluster set" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Maps of cluster assignments for each cluster set (click image to enlarge and see all 3 maps)</figcaption>
+        </figure> 
+
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+      <p> In each set of clusters, we can see that one cluster emerges with a high "percent of adults with a bachelor's degree or higher" , low unemployment, and low cancer incidence- cluster 3 on the 4-cluster set, cluster 5 on the 6-cluster set, 
+          and cluster 3 on the 7-cluster set. (Note that the cluster numbers are 0-indexed on the charts; this is maintained here). We also see clusters in each set that have high unemployment, high "percentage of adults who are not high school graduates",
+          and high cancer incidence (cluster 2 in the first, k=4, cluster 3 in the middle,k=6, and cluster 2 in the k=7 set). The other clusters have more mixed profiles. It is interesting that after adding more than 4 clusters, the lowest cancer incidence
+          and the highest "percent of adults with a bachelor's degree or higher" separate, and while that education marker is still associated with low cancer incidence, it's not the lowest.  
+<br>
+        When we turn to the maps it gets really interesting- there's a cluster that emerges in the mountain west that remains through out all the cluster sets that is characterized by the lowest cancer incidence (clusters 3, 4, and 1 from left to right on the maps graphic). 
+        At first glance, it seems to reflect counties that are rural- a similar pattern to the "unlit" areas on a nighttime light map: 
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <img src="data/data_visualizations/clustering/US_light_map_wikimedia_commons.png" alt="Nighttime light map of the US" style="width:550px; height:250px; object-fit: cover;">
+          <figcaption>Nighttime light map of the US, (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Earth%27s_City_Lights_by_DMSP%2C_1994-1995_%28large%29.jpg">Wikimedia Commons</a>.)</figcaption>
+        </figure>
+        <p>Certainly there are other rural areas across the rest of the US, but they don't seem to fall into the same cluster as the mountain west rural areas. Perhaps this could be due to the much larger contiguous tracts of rural 
+        land out in the west reducing access to health care due to difficulty to reach care centers, and thus diagnoses and reporting rates are lower?</p>
+      
 
 </main>
 </div>
