@@ -41,20 +41,94 @@ body {
 
 <main>
       <h2>Principal Component Analysis</h2>
-      <p>Overview</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
       PCA is a dimensionality reduction technique that transforms a dataset with a high number of dimensions (i.e. features) into a new, smaller series of aggregate features (the 'principal components')
       that capture most of the variance that the features contain. The first principal component captures the most variance, the second captures the most of the remaining variance, and so on. 
-      This is done by calculating the eigenvectors and eigenvalues of the covariance matrix of the data, and projecting the data onto the eigenvectors that correspond to the largest eigenvalues. Eigenvectors and eigenvalues
-      are characteristic mathematical objects calculated from a matrix that capture and distill aspects of where the most variance is contained in the data. Eigvenvalues are calculated by 
-      <p></p>
-      <p>Data Prep</p>
-      <p></p>
-      <p>Code</p>
-      <p></p>
-      <p>Results</p>
-      <p></p>
-      <p>Conclusions</p>
-      <p></p>
+      This is done by calculating the eigenvectors and eigenvalues of the covariance matrix of the data, and projecting the data into a new coordinate system that thus represents the covariance in the data. <br>
+      Eigenvectors and eigenvalues are special vectors/scalars calculated from a matrix that capture and distill certain properties/information about how the values in the matrix relate to each other; when performing this calculation on 
+      a covariance or correlation matrix, it indicates how we could transform the matrix to yield a diagonal matrix; for a covariance matrix, a diagonal matrix (one with all zeros except for the diagonal), this indicates no covariance 
+      between the features. So essentially, it is an indication of where in the covariance matrix the variance is captured, by expressing how we would need to transform the matrix to remove the variance. Once we know the directions
+      in which the most variance exists, we can then reproject the data into a new coordinate system defined by only those directions we choose, i.e. how many principal components we want to keep. These become the new reduced set
+      of dimensions. 
+      The eigenvectors and eigenvalues are calculated by solving the
+      characteristic equation of the covariance matrix, Ax= λx, where A is the covariance matrix, x is an eigenvector, and λ is the corresponding eigenvalue. 
+
+      Dimensionality reduction can be important in machine learning in many ways. Data that contains many many features can be noisy and have redundant information, which makes it difficult for modeling techniques 
+      to distinguish signal from noise, often leading to overfitting and consequently poor generalization performance. Datasets, especially for ML, can be enormous, and computations on matrices often have algorithmic complexity of
+      at least O(n^2), so reducing the number of features can save computational resources (which can be very expensive on high-powered GPUs), or even be needed just to make computation possible on large enough sets. 
+
+      Screenshot of a 3-d visual of eigenvector derivation from an excellent 3blue1brown video on eigenvectors and eigenvalues (linked below): <br>
+      <figure style="display: block;">
+        <img src="data/data_visualizations/pca/3b1b_eigen.png " alt="3D visual of eigenvectors" width="500">
+        <figcaption>3D visual of eigenvectors, from 3Blue1Brown's video on eigenvectors and eigenvalues.</figcaption>
+      </figure>
+
+      <p style="font-weight: bold; text-decoration: underline;">Data Prep</p>
+    
+      <p>  After having merged clinical and proteomics data from the PDC to get a dataset with many features and several cancer subtypes during the prep and EDA process, the data must now be prepared for PCA. 
+      Most importantly, any non-numeric data must be removed, and NaNs must be imputed or removed, and the data must be scaled. 
+      The raw data:
+      <figure style="display: block;">
+        <img src="data/data_visualizations/pca/pca_pdc_raw.png" alt="Raw data" width="500">
+        <figcaption>Raw data</figcaption>
+      </figure>
+      In this case, imputation may be most appropriate to retain as much of the data as possible, as eliminating all rows with missing values would result in a very small dataset. 
+      According to <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10949645/">Harris et al</a>, there is some debate about the quality of imputation for proteomics data, but KNN seems to be a reportedly common choice, and reasonable
+      given the meta-analysis of Harris et al.  
+      The scaled, imputed data is hosted on Google Drive <a href="https://drive.google.com/file/d/1Dy8p8HeE9nEYEw8hMJ8Q0HCW4et5Zpeu/view?usp=sharing">here</a> (~160MB).
+    </p>
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+      <p>
+      The Jupyter notebook with the code can be found on GitHub <a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/pca_analysis/">here</a>. The HTML version is <a href="data/pca_analysis/pdc_pca.html">here</a>.
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+
+      <p>
+      The top 3 components don't actually explain too much variance, PC 1 explains about 12.1%, PC2, 8.78 %, and PC3 7.73%. This is not terribly surprising given the complexity of protein profiles, and the enormous number
+      of dimensions to reduce from. However, the plots do reveal some clear clustering of the data by cancer type, which suggest that there is promise for classifying cancer type on proteomic profile. 
+      The plot of PC 1 and 2 colored by cancer type is shown below:
+      <figure style="display: block;">
+        <img src="data/data_visualizations/pca/pca_2d.png" alt="PCA 2D plot" width="500">
+        <figcaption>PCA 2D plot colored by cancer type</figcaption>
+      </figure>
+      The 3D plot of PC 1, 2, and 3 colored by cancer type is shown below:
+      <figure style="display: block;">
+        <img src="data/data_visualizations/pca/pca_3d.png" alt="PCA 3D plot" width="500">
+        <figcaption>PCA 3D plot colored by cancer type</figcaption>
+      </figure>
+       The proteins that contribute the most to the signal in the PCA can be determined by looking at the loading scores:
+        <figure style="display: block;">
+          <img src="data/data_visualizations/pca/top_contributing_proteins.png" alt="PCA loading scores" width="500">
+          <figcaption>PCA loading scores for the top 3 components</figcaption>
+        </figure>
+
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+    
+      <p>
+        The PCA shows that even with massive dimenstionality reduction, we can still get a clear signal can cluster by cancer type, which is a positive sign for future classification models. 
+        More biologically interesting, we can see the top contributing proteins to the PCA signal, and investigate their biological functions. For example the top contributing protein is 'DPYSL2', 'dihydropyrimidinase like 2', 
+        which <a href="https://www.ncbi.nlm.nih.gov/gene/1808"> according to the NIH </a> is "required for Sema3A-mediated growth cone collapse." This turns out to be a process that is more typically involved in tumor suppression, 
+        but <a href="https://www.nature.com/articles/s41467-024-47424-z">recent research has identified how Sem3A overexpression actually inhibits immune response </a> (specifically T-cell infiltration), which helps tumors evade immune response. 
+        The second most contributing is "LUM", Lumican, which is a <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8466546/"> connective tissue protein that has been shown to be associated with tumorigenesis and metastasis </a>, and know to be overexpressed in at least some cancers.  
+        The complexity of these cellular processes and the fact that the proteins are also involved in normal function highlights the magnitiude of just one of the aspects of cancer biology.  Perhaps methods like PCA
+        can help quickly identify proteins to investigate further, highlight interactions that might otherwise be difficult to tease out, and maybe even help elucidate the interactions, or anomalous interactions themselves.
+        In the scope of this project, PCA has shown that there is useful signal for classifying cancer type, and suggested some interesting directions to pursue further research into possible applications of ML to proteomics
+        data. 
+
+
+      </p>
+    <p style="font-weight: bold; text-decoration: underline;">References</p>
+      <p>PCA resources:</p>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=fkf4IBRSeEc">Steve Brunton's video on PCA</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ZSGrJBS_qtc">Steve Brunton's video on Eigenvalues and Eigenvectors</a></li>
+          <li><a href="https://www.youtube.com/watch?v=PFDu9oVAE-g">3Blue1Brown's video on Eigenvalues and Eigenvectors</a></li>
+          <li><a href="https://databookuw.com/">Brunton and Kutz's book "Data-Driven Science and Engineering"</a></li>
+
+        </ul>
+      </p>
+    
 
 
 </main>

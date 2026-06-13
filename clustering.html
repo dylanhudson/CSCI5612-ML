@@ -71,20 +71,21 @@ body {
         <figure>
           
           <img src="data/data_visualizations/clustering/clustering_screenshot.png" alt="Data after merging, dropping categorical features, and dropping rows with missing values." style="width:550px; height:150px; object-fit: cover;">
-          <figcaption>Data after merging, dropping categorical features, and dropping rows with missing values.</figcaption> Data can be accessed <a href="data/incd_socioeconomic_joined.csv">here.</a>
+          <figcaption>Data after merging, dropping categorical features, and dropping rows with missing values.</figcaption> Data can be accessed <a href="data/clustering_analysis/incd_socioeconomic_joined.csv">here.</a>
         </figure>
         The data was then standardized using the StandardScaler from sklearn, prior to running K-means and Heirarchical clustering.
       </p>
       <p style="font-weight: bold; text-decoration: underline;">Code</p>
-      <p>The Jupyter notebook can be found <a href="data/incidence_analysis.ipynb">here.</a> The HTML version can be found <a href="data/incidence_analysis.html">here.</a></p>
+      <p>The Jupyter notebook can be found <a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/clustering_analysis/">here.</a> The HTML version can be found <a href="data/clustering_analysis/incidence_analysis.html">here.</a></p>
       <p style="font-weight: bold; text-decoration: underline;">Results</p>
       <p>
-        The intial heirarchical clustering dendrogram suggested that 4, 6, or 7 cluster could be reasonable (we can see if we drew a line across the dendrogram at the main points of cluster separation, we would count that many lines.)
+        The intial heirarchical clustering dendrogram suggested that 3, 5, or 9 cluster could be reasonable (we can see if we drew a line across the dendrogram at the main points of cluster separation, we would count that many lines.)
         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
           <img src="data/data_visualizations/clustering/incd_dendrogram.png" alt="Dendrogram from heirarchical clustering" style="width:550px; height:350px; object-fit: cover;">
           <figcaption>Dendrogram from heirarchical clustering.</figcaption>
         </figure>
-        K-means clustering was then run with k=4, k=6, and k= 7, and the mean feature values for each cluster were visualized with heatmaps. 
+        A sillhouette test was run from k = 2 to k =12  as well, yielding a max value of about 0.338 at k=8, so K-means clustering was then run with k=3, k=5, and k=8, and the mean feature values for each cluster were visualized with heatmaps. 
+        
         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
           <a href="data/data_visualizations/clustering/heatmaps_cluster_means_incd_data.png">
           <img src="data/data_visualizations/clustering/heatmaps_cluster_means_incd_data.png" alt="Heatmap of mean feature values for each cluster" style="width:550px; height:350px; object-fit: cover;">
@@ -95,7 +96,7 @@ body {
 
 
 The clusters were also plotted on a map of the US by coloring each county
-        per the cluster assignment. k=4 for cluster set 1, k=6 for cluster set 2, and k=7 for cluster set 3.
+        per the cluster assignment. k=3 for cluster set 1, k=5 for cluster set 2, and k=8 for cluster set 3.
 
         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
           <a href="data/data_visualizations/clustering/kmeans_clusters_maps.png">
@@ -106,19 +107,20 @@ The clusters were also plotted on a map of the US by coloring each county
 
       </p>
       <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
-      <p> In each set of clusters, we can see that one cluster emerges with a high "percent of adults with a bachelor's degree or higher" , low unemployment, and low cancer incidence- cluster 3 on the 4-cluster set, cluster 5 on the 6-cluster set, 
-          and cluster 3 on the 7-cluster set. (Note that the cluster numbers are 0-indexed on the charts; this is maintained here). We also see clusters in each set that have high unemployment, high "percentage of adults who are not high school graduates",
+      <p> In each set of clusters, we can see that one cluster emerges with a high "percent of adults with a bachelor's degree or higher" , low unemployment, and low cancer incidence- cluster 2 on the 3-cluster set, cluster 3 on the 5-cluster set, 
+          and cluster 5 on the 7-cluster set. (Note that the cluster numbers are 0-indexed on the charts; this is maintained here). We also see clusters in each set that have high unemployment, high "percentage of adults who are not high school graduates",
           and high cancer incidence (cluster 2 in the first, k=4, cluster 3 in the middle,k=6, and cluster 2 in the k=7 set). The other clusters have more mixed profiles. It is interesting that after adding more than 4 clusters, the lowest cancer incidence
           and the highest "percent of adults with a bachelor's degree or higher" separate, and while that education marker is still associated with low cancer incidence, it's not the lowest.  
 <br>
-        When we turn to the maps it gets really interesting- there's a cluster that emerges in the mountain west that remains through out all the cluster sets that is characterized by the lowest cancer incidence (clusters 3, 4, and 1 from left to right on the maps graphic). 
+        When we turn to the maps it gets really interesting- there's a cluster that emerges in the mountain west that remains through out all the cluster sets that is characterized by the lowest cancer incidence (clusters 2, 2, and 3 from left to right on the maps graphic). 
         At first glance, it seems to reflect counties that are rural- a similar pattern to the "unlit" areas on a nighttime light map: 
         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
           <img src="data/data_visualizations/clustering/US_light_map_wikimedia_commons.png" alt="Nighttime light map of the US" style="width:550px; height:250px; object-fit: cover;">
           <figcaption>Nighttime light map of the US, (image source: <a href="https://upload.wikimedia.org/wikipedia/commons/e/e1/Earth%27s_City_Lights_by_DMSP%2C_1994-1995_%28large%29.jpg">Wikimedia Commons</a>.)</figcaption>
         </figure>
         <p>Certainly there are other rural areas across the rest of the US, but they don't seem to fall into the same cluster as the mountain west rural areas. Perhaps this could be due to the much larger contiguous tracts of rural 
-        land out in the west reducing access to health care due to difficulty to reach care centers, and thus diagnoses and reporting rates are lower?</p>
+        land out in the west reducing access to health care due to difficulty to reach care centers, and thus diagnoses and reporting rates are lower?</p> Incorporating data like medical center access and population density might
+        lend some insight into how the more mixed clusters group. 
       
 
 </main>
