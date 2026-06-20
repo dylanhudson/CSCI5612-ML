@@ -1,0 +1,155 @@
+"Stage","Diagnosis.Age","Aneuploidy.Score","Cancer.Type.Detailed","Fraction.Genome.Altered","Sex","Mutation.Count"
+"STAGE IIIB",67,13,"Colon Adenocarcinoma",0.313,"Male",85
+"STAGE IV",74,18,"Colon Adenocarcinoma",0.4095,"Male",176
+"STAGE IIA",76,20,"Colon Adenocarcinoma",0.4018,"Male",113
+"STAGE IIIC",68,8,"Colon Adenocarcinoma",NA,"Female",116
+"STAGE IIA",73,13,"Colon Adenocarcinoma",0.3353,"Female",130
+"STAGE IV",57,20,"Colon Adenocarcinoma",0.4112,"Female",33
+"STAGE I",75,7,"Colon Adenocarcinoma",NA,"Female",99
+"STAGE IIIC",53,16,"Colon Adenocarcinoma",0.3442,"Female",90
+"STAGE IIA",62,22,"Colon Adenocarcinoma",NA,"Male",166
+"STAGE IIA",79,17,"Colon Adenocarcinoma",0.3692,"Male",145
+"STAGE IIIB",57,27,"Colon Adenocarcinoma",0.2565,"Female",169
+"STAGE IIIB",65,8,"Colon Adenocarcinoma",0.0871,"Male",101
+"STAGE IIA",84,1,"Colon Adenocarcinoma",0.0133,"Female",1859
+"STAGE IIIB",40,22,"Colon Adenocarcinoma",0.5465,"Female",58
+"STAGE IIIB",55,8,"Colon Adenocarcinoma",0.1679,"Male",115
+"STAGE IIA",62,14,"Colon Adenocarcinoma",0.2804,"Male",NA
+"STAGE IIIB",65,26,"Colon Adenocarcinoma",0.1377,"Female",170
+"STAGE II",83,12,"Colon Adenocarcinoma",0.3153,"Female",146
+"STAGE I",81,4,"Colon Adenocarcinoma",0.0782,"Female",31
+"STAGE III",63,16,"Colon Adenocarcinoma",0.3694,"Male",21
+"STAGE I",54,10,"Colon Adenocarcinoma",0.338,"Female",15
+"STAGE IIIC",71,14,"Colon Adenocarcinoma",0.2886,"Female",18
+"STAGE I",69,8,"Colon Adenocarcinoma",0.2247,"Male",18
+"STAGE I",61,22,"Colon Adenocarcinoma",0.4086,"Female",NA
+"STAGE IIA",72,9,"Colon Adenocarcinoma",0.2301,"Male",17
+"STAGE II",42,4,"Colon Adenocarcinoma",0.0983,"Male",1937
+"STAGE IV",59,16,"Colon Adenocarcinoma",0.5643,"Male",59
+"STAGE II",69,26,"Colon Adenocarcinoma",0.5316,"Male",83
+"STAGE IIA",78,9,"Colon Adenocarcinoma",0.1748,"Female",138
+"STAGE IIIC",78,16,"Colon Adenocarcinoma",0.3323,"Female",112
+"STAGE IIA",74,19,"Colon Adenocarcinoma",0.4916,"Male",89
+"STAGE I",71,2,"Mucinous Adenocarcinoma of the Colon and Rectum",0.1273,"Female",139
+"STAGE I",72,8,"Colon Adenocarcinoma",0.3279,"Male",147
+"STAGE IIA",59,21,"Colon Adenocarcinoma",0.3329,"Male",57
+"STAGE I",78,26,"Colon Adenocarcinoma",0.346,"Female",100
+"STAGE IV",76,18,"Colon Adenocarcinoma",0.4115,"Male",NA
+"STAGE I",78,17,"Colon Adenocarcinoma",0.0867,"Female",118
+"STAGE I",83,2,"Mucinous Adenocarcinoma of the Colon and Rectum",0.0559,"Female",1083
+"STAGE IV",66,9,"Colon Adenocarcinoma",0.3057,"Male",NA
+"STAGE IIIC",68,11,"Colon Adenocarcinoma",0.3808,"Male",98
+"STAGE IIIB",38,15,"Colon Adenocarcinoma",0.3101,"Male",131
+"STAGE IIA",84,12,"Colon Adenocarcinoma",0.2946,"Male",129
+"STAGE IIA",61,7,"Colon Adenocarcinoma",0.1573,"Female",5113
+"STAGE IIA",76,10,"Colon Adenocarcinoma",0.3077,"Male",68
+"STAGE IIIC",83,7,"Colon Adenocarcinoma",0.1944,"Female",NA
+"STAGE IIA",57,9,"Colon Adenocarcinoma",0.231,"Female",54
+"STAGE IIIA",75,17,"Colon Adenocarcinoma",0.423,"Male",86
+"STAGE IIIB",72,20,"Colon Adenocarcinoma",0.5492,"Male",NA
+"STAGE III",47,2,"Mucinous Adenocarcinoma of the Colon and Rectum",0.0832,"Male",1621
+"STAGE II",68,8,"Colon Adenocarcinoma",0.1752,"Male",95
+"STAGE II",67,13,"Colon Adenocarcinoma",0.2676,"Male",NA
+"STAGE IV",82,23,"Colon Adenocarcinoma",0.5898,"Female",148
+"STAGE I",73,21,"Colon Adenocarcinoma",0.4626,"Female",92
+"STAGE I",81,4,"Colon Adenocarcinoma",0.0752,"Female",119
+"STAGE IV",41,18,"Rectal Adenocarcinoma",0.433,"Female",26
+"STAGE I",48,11,"Rectal Adenocarcinoma",0.1282,"Female",34
+"STAGE IIA",54,16,"Rectal Adenocarcinoma",0.4873,"Female",12
+"STAGE I",75,8,"Rectal Adenocarcinoma",0.2996,"Male",83
+"STAGE IIIB",72,27,"Rectal Adenocarcinoma",0.4803,"Female",110
+"STAGE IV",43,21,"Rectal Adenocarcinoma",0.5116,"Male",76
+"STAGE I",63,12,"Rectal Adenocarcinoma",0.2427,"Male",15
+"STAGE IV",66,11,"Rectal Adenocarcinoma",0.2426,"Male",21
+"STAGE IV",60,13,"Rectal Adenocarcinoma",0.4099,"Male",20
+"STAGE I",65,22,"Rectal Adenocarcinoma",0.3226,"Male",NA
+"STAGE IIA",66,22,"Rectal Adenocarcinoma",0.4369,"Female",72
+"STAGE IIA",77,9,"Rectal Adenocarcinoma",0.299,"Male",12
+"STAGE IIIC",62,18,"Rectal Adenocarcinoma",0.6084,"Male",NA
+"STAGE IV",85,9,"Rectal Adenocarcinoma",0.1912,"Female",9
+"STAGE III",78,6,"Rectal Adenocarcinoma",0.1934,"Female",84
+"STAGE IV",65,15,"Rectal Adenocarcinoma",0.1624,"Male",134
+"STAGE I",85,10,"Rectal Adenocarcinoma",0.273,"Female",138
+"STAGE IIA",83,20,"Rectal Adenocarcinoma",0.3911,"Female",110
+"STAGE IIA",61,12,"Rectal Adenocarcinoma",0.2552,"Male",119
+"STAGE IIA",74,21,"Rectal Adenocarcinoma",0.2458,"Female",102
+"STAGE IV",64,16,"Rectal Adenocarcinoma",0.4102,"Male",NA
+"STAGE IV",87,25,"Rectal Adenocarcinoma",0.2265,"Male",NA
+"STAGE IV",84,11,"Rectal Adenocarcinoma",0.2814,"Female",134
+"STAGE II",59,31,"Rectal Adenocarcinoma",0.1848,"Female",84
+"STAGE IIIB",49,7,"Rectal Adenocarcinoma",0.12,"Female",127
+"STAGE IIA",68,8,"Rectal Adenocarcinoma",0.2973,"Male",326
+"STAGE IIA",59,9,"Rectal Adenocarcinoma",0.1856,"Female",89
+"STAGE II",67,4,"Rectal Adenocarcinoma",0.098,"Male",1079
+"STAGE I",77,18,"Rectal Adenocarcinoma",0.9653,"Male",126
+"STAGE IIIB",68,24,"Rectal Adenocarcinoma",0.4336,"Male",77
+"STAGE IIIB",46,2,"Rectal Adenocarcinoma",0.0329,"Male",68
+"STAGE IVA",59,6,"Colon Adenocarcinoma",0.2068,"Female",72
+"STAGE IIA",68,4,"Colon Adenocarcinoma",0.105,"Female",1204
+"STAGE IVA",65,14,"Colon Adenocarcinoma",0.3122,"Female",97
+"STAGE IIIB",66,2,"Colon Adenocarcinoma",0.0544,"Female",99
+"STAGE IIA",55,23,"Colon Adenocarcinoma",0.508,"Female",186
+"STAGE IV",37,5,"Colon Adenocarcinoma",0.0208,"Male",51
+"STAGE IIIB",84,2,"Colon Adenocarcinoma",0.0587,"Male",837
+"STAGE II",43,17,"Colon Adenocarcinoma",0.3092,"Male",76
+"STAGE II",77,11,"Colon Adenocarcinoma",0.2696,"Female",2309
+"STAGE IIA",52,4,"Mucinous Adenocarcinoma of the Colon and Rectum",0.1135,"Female",60
+"STAGE IIA",56,17,"Colon Adenocarcinoma",0.415,"Male",59
+"STAGE IV",41,25,"Rectal Adenocarcinoma",0.1629,"Male",71
+"STAGE IIB",74,7,"Rectal Adenocarcinoma",0.1275,"Male",93
+"STAGE I",53,17,"Rectal Adenocarcinoma",0.1069,"Female",252
+"STAGE IIIB",68,8,"Mucinous Adenocarcinoma of the Colon and Rectum",0.2115,"Female",154
+"STAGE I",81,22,"Colon Adenocarcinoma",0.4202,"Male",62
+"STAGE IIB",84,2,"Colon Adenocarcinoma",0.0504,"Female",1198
+"STAGE IV",45,16,"Mucinous Adenocarcinoma of the Colon and Rectum",0.3754,"Female",57
+"STAGE IIA",90,12,"Rectal Adenocarcinoma",0.2572,"Female",117
+"STAGE IIIB",39,21,"Colon Adenocarcinoma",0.3266,"Female",59
+"STAGE IIIB",72,24,"Colon Adenocarcinoma",0.2869,"Male",168
+"STAGE I",48,16,"Colon Adenocarcinoma",0.3279,"Female",81
+"STAGE IIIC",57,27,"Colon Adenocarcinoma",0.0986,"Female",79
+"STAGE I",73,14,"Colon Adenocarcinoma",0.3913,"Female",84
+"STAGE I",77,1,"Colon Adenocarcinoma",0.0463,"Female",1149
+"STAGE IIA",75,19,"Colon Adenocarcinoma",0.3427,"Female",136
+"STAGE IVA",63,12,"Colon Adenocarcinoma",0.1951,"Female",119
+"STAGE IIIA",60,21,"Mucinous Adenocarcinoma of the Colon and Rectum",0.166,"Male",91
+"STAGE IIA",61,7,"Colon Adenocarcinoma",0.1541,"Male",93
+"STAGE IIIB",68,21,"Colon Adenocarcinoma",0.5398,"Female",143
+"STAGE IIIB",80,17,"Colon Adenocarcinoma",0.5387,"Female",157
+"STAGE I",51,15,"Colon Adenocarcinoma",0.3116,"Female",70
+"STAGE IIA",77,2,"Colon Adenocarcinoma",0.0217,"Female",107
+"STAGE IIIB",65,16,"Colon Adenocarcinoma",0.2269,"Male",99
+"STAGE IV",49,18,"Colon Adenocarcinoma",0.1669,"Female",105
+"STAGE I",57,20,"Rectal Adenocarcinoma",0.4852,"Male",67
+"STAGE I",48,25,"Rectal Adenocarcinoma",0.4915,"Male",85
+"STAGE I",68,9,"Rectal Adenocarcinoma",0.2459,"Male",80
+"STAGE IVA",70,4,"Rectal Adenocarcinoma",0.058,"Female",67
+"STAGE IIA",57,25,"Rectal Adenocarcinoma",0.2024,"Male",118
+"STAGE IIIC",68,13,"Colon Adenocarcinoma",0.2678,"Female",112
+"STAGE IIA",80,9,"Colon Adenocarcinoma",0.2455,"Male",164
+"STAGE IIIC",71,17,"Colon Adenocarcinoma",0.7719,"Female",251
+"STAGE IIA",70,3,"Mucinous Adenocarcinoma of the Colon and Rectum",0.0942,"Female",120
+"STAGE IIIC",68,16,"Mucinous Adenocarcinoma of the Colon and Rectum",0.4907,"Male",74
+"STAGE IIA",75,8,"Mucinous Adenocarcinoma of the Colon and Rectum",0.2298,"Male",101
+"STAGE IIA",57,13,"Rectal Adenocarcinoma",0.314,"Female",128
+"STAGE IIIC",73,21,"Rectal Adenocarcinoma",0.5784,"Female",123
+"STAGE IIB",54,10,"Rectal Adenocarcinoma",0.2437,"Male",65
+"STAGE IIA",60,2,"Rectal Adenocarcinoma",0.0475,"Male",923
+"STAGE IIIB",48,5,"Rectal Adenocarcinoma",0.194,"Female",101
+"STAGE IIIB",52,12,"Rectal Adenocarcinoma",0.3252,"Male",78
+"STAGE IVA",37,8,"Rectal Adenocarcinoma",0.318,"Female",85
+"STAGE IIIB",61,11,"Colon Adenocarcinoma",0.3075,"Female",126
+"STAGE IIIB",51,20,"Colon Adenocarcinoma",0.5944,"Female",127
+"STAGE IIA",51,4,"Mucinous Adenocarcinoma of the Colon and Rectum",0.1206,"Male",69
+"STAGE IIIC",60,20,"Mucinous Adenocarcinoma of the Colon and Rectum",0.3791,"Male",78
+"STAGE IVA",52,8,"Colon Adenocarcinoma",0.1669,"Female",148
+"STAGE IIIC",77,28,"Rectal Adenocarcinoma",0.2378,"Female",86
+"STAGE IIA",72,18,"Rectal Adenocarcinoma",0.3801,"Female",84
+"STAGE IIIC",70,16,"Rectal Adenocarcinoma",0.4134,"Male",123
+"STAGE IIA",60,4,"Rectal Adenocarcinoma",0.0696,"Female",95
+"STAGE IV",55,29,"Colon Adenocarcinoma",0.2799,"Female",85
+"STAGE IIIB",37,19,"Colon Adenocarcinoma",0.2746,"Female",74
+"STAGE III",80,26,"Colon Adenocarcinoma",0.1236,"Male",124
+"STAGE III",73,11,"Colon Adenocarcinoma",0.1286,"Male",1014
+"STAGE IIA",73,1,"Colon Adenocarcinoma",0.045,"Female",1108
+"STAGE IIIC",55,21,"Mucinous Adenocarcinoma of the Colon and Rectum",0.4458,"Female",148
+"STAGE IIIB",51,26,"Colon Adenocarcinoma",0.2344,"Male",126

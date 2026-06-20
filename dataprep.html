@@ -28,7 +28,6 @@ body {
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
   <li><a href="pca.html">PCA</a></li>
-  <li><a href="arm.html">Association Rule Mining</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="svms.html">Support Vector Machines</a></li>
@@ -55,23 +54,34 @@ body {
         <tr>
           <td>Clinical Case Data from the NIH Proteomic Data Commons (PDC)</td>
           <td>Patient-level demographic, risk factor, and protein expression data. Pulled by <a href="https://proteomic.datacommons.cancer.gov/pdc/publicapi-documentation/#!/Case/allCases">API</a>
+            <figure style="margin: 0; text-align: center;">
+        <a href="data/pdc_data/pdc_api_code_example.png">
+          <img src="data/pdc_data/pdc_api_code_example.png" alt=" PDC API Call Example"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>PDC API example</figcaption>
+      </figure>
           </td>
           <td><a href="https://proteomic.datacommons.cancer.gov/pdc/">PDC</a></td>
-          <td><a href="data/pdc_data/PDC_data_pull_2.html">API Calls and Parsing/Cleaning</a></td>
+          <td><a href="data/pdc_data/PDC_data_pull_2.html">API Calls and Parsing/Cleaning Notebook.</a> First, the available fields from the respective APIs were determined, i.e. demographic fields, case IDs, etc. 
+          Then, the data was pulled from each API endpoint and combined in a single dataset, mapping cases to aliquots (protein profiles). Then, "days_to_birth" columns was converted to age in "years. Then, the data was subset
+          according to particular fields, e.g. whether smoking data was present, so NaNs could be dropped from each subset without affecting others for which the missing data may not affect the  analysis. The cleaned data was exported.  </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/pdc_data">Github</a></td>
         </tr>
         <tr>
           <td>500 Cities Health Data</td>
           <td>Health-related data for 500 US cities, including lifestyle factors and health outcomes.</td>
           <td><a href="https://www.cdc.gov/500cities/">CDC 500 Cities</a></td>
-          <td><a href="data/500_cities_health_data/500_cities_data_cleaning.html">500 Cities EDA/Cleaning</a></td>
+          <td><a href="data/500_cities_health_data/500_cities_data_cleaning.html">500 Cities EDA/Cleaning Notebook.</a> The data was read in as a csv. Then rows with NaN values were dropped. Then, the US Census Geolookup API
+          was used to convert location coordinates to county FIPS codes. Then, some columns were renamed for easier coding, and the dataset was subset to only relevant columns. </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/500_cities_health_data">Github</a></td>
         </tr>
         <tr>
           <td>Genomic Data from TCGA</td>
           <td>Genomic and clinical data for various cancer types from The Cancer Genome Atlas.</td>
           <td><a href="https://www.cancer.gov/tcga">TCGA Data</a></td>
-          <td><a href="data/TCGA_genomics_data/tcga_clinical.html">TCGA EDA/Cleaning</a></td>
+          <td><a href="data/TCGA_genomics_data/tcga_clinical.html">TCGA EDA/Cleaning Notebook.</a> First, the data was read in as a csv. Then, columns with high NaN counts, and those irrelvant to the analysis were dropped. 
+          </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/TCGA_genomics_data">Github</a></td>
         </tr>
 
@@ -80,42 +90,58 @@ body {
           <td>2,000 pt simulated dataset with cancer subtypes, genetic mutations, treatment modes, and other clinical features. 
           </td>
           <td><a href="https://www.kaggle.com/datasets/zkskhurram/pancreatic-cancer-global-clinical-and-risk-factor"> Kaggle</td>
-          <td><a href="data/pancreatic_cancer_global_dataset_kaggle/synthetic_pancreatic_data.html">EDA/Cleaning</a></td>
+          <td><a href="data/pancreatic_cancer_global_dataset_kaggle/synthetic_pancreatic_data.html">EDA/Cleaning Notebook.</a> This synthetic data was created for ML purposes, so it was already quite clean. A few columns had high NaN counts, 
+          so those were dropped. No further cleaning was immediately necessary, so some EDA and visualization was conducted. </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/pancreatic_cancer_global_dataset_kaggle">Github</a></td>
         </tr>
         <tr>
           <td>NIH PubMed Abstracts</td>
-          <td>Abstracts from PubMed related to certain cancer prognoses for qualitative use or NLP. Pulled by <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi">API</a>.</td>
+          <td>Abstracts from PubMed related to certain cancer prognoses for qualitative use or NLP. Pulled by <a href="https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi">API</a>. Example of the API call and reponse:
+          <figure style="margin: 0; text-align: center;">
+        <a href="data/nih_pubmed_abstracts/API_call_example.png">
+          <img src="data/nih_pubmed_abstracts/API_call_example.png" alt=" NIH PubMed API Call Example"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>PubMed API example</figcaption>
+      </figure>
+      </td>
           <td><a href="https://pubmed.ncbi.nlm.nih.gov/">PubMed</a></td>
-          <td><a href="data/nih_pubmed_abstracts/pubmed_abstracts.html">API Calls/Parsing, Data Export</a></td>
+          <td><a href="data/nih_pubmed_abstracts/pubmed_abstracts.html">API Calls/Parsing, Data Export Notebook.</a> 
+            The data was pulled using the PubMed API. As this data is mostly unstrucured, it is primarily for potential NLP use if applicable. Key points like Title and Background were parsed out via regex to 
+          test feasibility of structuring if needed later.</td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/nih_pubmed_abstracts">Github</a></td>
         </tr>
         <tr>
           <td>EPA Annual Air Quality Data</td>
           <td>Data on air quality and environmental factors from the Environmental Protection Agency (EPA).</td>
           <td><a href="https://aqs.epa.gov/aqsweb/airdata/download_files.html#Meta">EPA Data</a></td>
-          <td><a href="data/EPA_air_quality_data/epa_air_data_notebook.html">Cleaning and EDA</a></td>
+          <td><a href="data/EPA_air_quality_data/epa_air_data_notebook.html">Cleaning and EDA Notebook. </a> The data was read in as a csv. The State and County codes were convered to FIPS codes using a lookup table from the US Census. 
+          Columns with high numbers of missing data were dropped, along with irrelevent administrative data. Then, NaN rows were dropped. </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/EPA_air_quality_data">Github</a></td>
         </tr>
         <tr>
           <td>USGS Pesticide Use Data</td>
           <td>Data on pesticide use from the United States Geological Survey (USGS).</td>
           <td><a href="https://water.usgs.gov/nawqa/pnsp/usage/maps/county-level/">USGS Data</a></td>
-          <td><a href="data/USGS_pesticide_data/usgs_pest_2002.html">Cleaning and EDA</a></td>
+          <td><a href="data/USGS_pesticide_data/usgs_pest_2002.html">Cleaning and EDA Notebook.</a> The data was first read in as a TSV file. Then the state and county FIPS codes were combined to match the other datasets'
+          5-digit FIPS code. Pesticide level estimates were converted to numeric. Columns iwht over 80% NaNs were dropped; many have many NaNs, but it is not decided yet which pesticides are relevant for later analysis.</td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/USGS_pesticide_data">Github</a></td>
         </tr>
         <tr>
           <td>National Cancer Institute State Cancer Profiles</td>
           <td>Data on cancer incidence and mortality rates by state from the National Cancer Institute.</td>
           <td><a href="https://statecancerprofiles.cancer.gov/incidencerates/index.php">NCI Data</a></td>
-          <td><a href="data/cancer_incidence_data_2023/state_cancer_incd.html">Cleaning and EDA</a></td>
+          <td><a href="data/cancer_incidence_data_2023/state_cancer_incd.html">Cleaning and EDA Notebook.</a> The data was read in as a csv. Columns with special chars in the names were renamed, and numeric columns were coerced
+          to floats. </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/cancer_incidence_data_2023">Github</a></td>
         </tr>
         <tr>
           <td>USDA Economic Research Service Data</td>
           <td>Reports on unemployment and education levels</td>
           <td><a href="https://www.ers.usda.gov/data-products/county-level-data-sets/county-level-data-sets-download-data">USDA Data</a></td>
-          <td><a href="data/USDA_economic_research_data/usda_ers_data.html">Cleaning and EDA</a></td>
+          <td><a href="data/USDA_economic_research_data/usda_ers_data.html">Cleaning and EDA Notebook.</a> The data was read in as a csv. The FIPS codes were observed to be slightly malformatted, so those were fixed. The data was subset
+          to factors that are tractable for comparative anlaysis, i.e. those with percentages instead of raw numbers. The data was pivoted from long-form to create a dataframe with each of the factors as columns. To deal with the large amoutn
+        of missing data at the per-year resolution, the data was aggregated to decades, then subset to just the 2000s to better match the time frames of the other datasets.   </td>
           <td><a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/USDA_economic_research_data">Github</a></td>
         </tr>
       </table>
@@ -237,6 +263,13 @@ body {
         </a>
         <figcaption>Raw Data Ex.</figcaption>
       </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/pancreatic_cancer_global_dataset_kaggle/cleaned_synthetic.png">
+          <img src="data/pancreatic_cancer_global_dataset_kaggle/cleaned_synthetic.png" alt="Clean Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Data Ex.</figcaption>
+      </figure>
     </td>
     <td>
       <figure style="margin: 0; text-align: center;">
@@ -257,6 +290,13 @@ body {
                style="width: 100px; height: 100px; object-fit: cover;">
         </a>
         <figcaption>Raw Data Ex.</figcaption>
+      </figure>
+      <figure style="margin: 0; text-align: center;">
+        <a href="data/nih_pubmed_abstracts/pubmed_clean.png">
+          <img src="data/nih_pubmed_abstracts/pubmed_clean.png" alt="Clean Data"
+               style="width: 100px; height: 100px; object-fit: cover;">
+        </a>
+        <figcaption>Clean Example</figcaption>
       </figure>
   </tr>
   <tr>

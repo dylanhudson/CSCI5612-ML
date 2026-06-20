@@ -27,7 +27,6 @@ body {
   <li><a href="introduction.html">Introduction</a></li>
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
-  <li><a href="arm.html">Association Rule Mining</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="svms.html">Support Vector Machines</a></li>
@@ -40,7 +39,161 @@ body {
 
 <main>
       <h2>Decision Trees</h2>
-      <p>Page under construction</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
+      <p>Decision Trees are a type of supervised learning algorithm used for classification and regression tasks. 
+        They work by recursively splitting the data in to smaller subsets based on a 'test', i.e. a conditional split on a particular feature. These splits
+      are usually binary to limit complexity and overfitting, which decision trees are prone to anyway. In the tree, the nodes
+    represent the tests, and the branches represent the outcomes of the test for a given data point. The leaf (i.e. terminal) nodes
+  indicate the prediction for that data point.  
+  <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Snowy_frozen_branch_winter_dusk.jpg/960px-Snowy_frozen_branch_winter_dusk.jpg" alt="Snowy Frozen Branch" width="500" height="300" style="object-fit: cover;">
+    <figcaption>A tree branch exhibiting the structure from which Decision Trees get their name (Source: Wikimedia Commons) </figcaption>
+        </figure>
+
+
+<figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Decision_Tree_Explain.png?_=20211111130227" alt="Decision Tree" width="500" height="300" style="object-fit: cover;">
+<figcaption>Decision Tree Example for Rock Classification (Source: Wikimedia Commons) </figcaption>
+</figure>
+
+To make accurate splits, a mathematical metric is needed to power the algoritm. Typically, concepts from information theory are used, such as 
+Information Gain, Gini index, or entropy. Information is essentially the opposite of entropy; entropy is a measure of uncertainty or randomness,
+analogous to noise vs signal, with information representing the reduction in uncertainty, i.e. the amount of signal. So, using information gain as
+a metric involves measuring the reduction in entropy after a the dataset is split on a test, so the most gain is the best split. For example, if the chance of choosing the correct class 
+for a data point completely at random from the whole set is 50%, and the chance of choosing a correct class after splitting the data by a condition is
+60%, then the entropy has decreased, and the information gain is positive. <br>
+The Gini index is another way to measure this, instead calculating the probability of misclassificaition vis-a-vis the idea of node 'purity'- how many
+data points are misclassified by applying a particular conditional split. The Gini index is calculated by subtracting the sum of the squared probabilities 
+of particular outcome in a post-split group. 
+<br>
+Because of the various metrics available, the different ways to subset data, and the different possible conditions for splitting the data, 
+creating an infinite number of decision trees is technically possible (given continuous feaures or unbounded data). Even in practice, with 
+finite datasets, the number of possible trees can still be extremely large. 
+
+
+
+<br>
+
+
+</p>
+      <p style="font-weight: bold; text-decoration: underline;">Data Preparation</p>
+      <p> The data for this decision tree model is the same as used in the Naive Bayes model, to allow a comparison between the classification methods.
+         Clinical data with cancer stages fromt the TCGA was used for this analysis. To prepare the data, 
+        the prevously prepared TCGA dataset was read back in to R, maintaining the same column subset selection as for Naive Bayes. The data was then divided into disjunct training and test sets so the 
+      model can be evaluated, with 70% of the data used for training and 30% reserved for testing, using R's `sample` function, which randomly selects rows. The same random seed 
+    was used to ensure reproducibility and enable an accurate comparison to the NB model. As some stages were not represented sufficiently in the dataset to be present
+    in both training and test data, only those found in both sets were retained. 
+    A disjunct training and test set is critical for accurately evaluating the model. If the model is trained on 
+  the evaluation data, the ability to detect overfitting is compromised, and the results may not reflect actual performance. </p>
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <img src="data/dec_trees/raw_data.png" alt="raw DT data" style="width:550px; height:350px; object-fit: cover;">
+          <figcaption>Raw data </figcaption> <br>
+          Train/test split example (note that the same split has been applied as to the Naive Bayes model, by using the same random seed. This
+way the results are more directly comparable.)
+</figure>
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/dt_train_test.png">
+          <img src="data/dec_trees/dt_train_test.png" alt="train/test split" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Train/Test Split Example </figcaption>
+        </figure>
+        <br>
+        The prepared data can be found here: <a href="data/dec_trees/train_data_filtered.csv">Train Data</a> and <a href="data/dec_trees/test_data_filtered.csv">Test Data</a>.
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+      The Jupyter notebook can be found <a href="data/dec_trees/dt.ipynb">here</a>. The HTML notebook can be found <a href="data/dec_trees/dt.html">here</a>.
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+      The first decision tree model, classifying all the represented stages in the training set, achieved an accuracy of 31.8%, much better than the NB's 9.09%.
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/all_stage_tree_1.png">
+          <img src="data/dec_trees/all_stage_tree_1.png" alt="First Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>First Decision Tree (click to view full size)</figcaption>
+        </figure>
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/conf_matrix_dec_tree_1.png">
+          <img src="data/dec_trees/conf_matrix_dec_tree_1.png" alt="Confusion Matrix: Dec Tree 1" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion Matrix: Full Dec Tree 1 (click to view full size)</figcaption>
+        </figure>
+
+        Diagnosis Age was shown to be a main contributor to the NB model; as such it was identified as a candidate for removal to assess the 
+        impact on decision tree model performance. This reduced model demonstrated an accuracy of 27.2% - a reduction compared to the full model, but not 
+        too extreme.
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/reduce_tree_1.png">
+          <img src="data/dec_trees/reduce_tree_1.png" alt="Reduced Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Reduced Decision Tree, removing Diagnosis.Age as a feature. </figcaption>
+        </figure>
+
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/conf_matrix_reduced_1.png">
+          <img src="data/dec_trees/conf_matrix_reduced_1.png" alt="Confusion Matrix: Reduced Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion Matrix: Reduced Decision Tree, removing Diagnosis.Age as a feature. </figcaption>
+        </figure>
+         A second reduced model was then created, removing Mutation.Count as a feature, to further assess the impact on model performance, as Mutation.Count was shown to be a
+        test condition in several decisions of the previous model. 
+
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/reduced_tree_2.png">
+          <img src="data/dec_trees/reduced_tree_2.png" alt="Reduced Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Reduced Decision Tree, removing  Mutation.Count as a feature. </figcaption>
+        </figure>
+      This reduced model showed an accuracy of 24.6%. 
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/conf_matrix_reduced_mutation.png">
+          <img src="data/dec_trees/conf_matrix_reduced_mutation.png" alt="Confusion Matrix: Reduced Decision Tree - No Mutation.Count" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion Matrix: Reduced Decision Tree, removing  Mutation.Count as a feature. </figcaption>
+        </figure>
+
+        <br><br>
+        As the Naive Bayes model achieved much higher accuracy when the number of possible classes was simplied to the 4 numeric class, the same 
+        was modeled with a decision tree:
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/simplified_dec_tree.png">
+          <img src="data/dec_trees/simplified_dec_tree.png" alt="Simplified Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Simplified Decision Tree, modeling only the 4 numeric classes. </figcaption>
+        </figure>
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/dec_trees/conf_matrix_simplified_tree.png">
+          <img src="data/dec_trees/conf_matrix_simplified_tree.png" alt="Confusion Matrix: Simplified Decision Tree" style="width:300px; height:150px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion Matrix: Simplified Decision Tree. </figcaption>
+        </figure>
+        This model achieved 31.6% accuracy, slightly worse than the NB model at 34.8%, and in fact worse than the first decision tree's 31.8%.
+ Unlike with the NB model, reducing the number of possible classes did not improve the model accuracy. This is very interesting, and may indicate the bias/variance tradeoff between the two models. 
+      The NB model is high bias and low variance- it makes strong, general assumptions, but struggles to accomodate subtle patterns and correlated features, as the independence 
+   assumption is likely violated with these features. So it can generalize more robustly, but detailed accuracy suffers (i.e. it tends towards underfitting). The decision tree excels in the opposite area, being able to relate multiple features and isolating subsets that share particular
+    characteristics across multiple features. However, this specificity bites back when the target classes are made more general; the decision tree's
+    weakness for overfitting becomes apparent, and accuracy suffers as a result of the lost ability to generalize. This is an example of a low-bias, high-variance model- complex patterns are learned, but
+    it remains very sensitive to noise or change, and generalization performance can decline quickly. 
+
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+      <p>
+        There are several interesting observations to be made from this collection of trees. 
+         It can be seen in the first set of trees that "Fraction.Genome.Altered" is the primary separator, an interesting contrast to the
+      "Diagnosis.Age" feature, which was the main contributor in the Naive Bayes model. "Fraction.Genome.Altered" makes more biological sense, 
+      as the more highly altered genomes would be expected with more advanced cancer stages. When Diagnosis.Age is removed, performance drops slightly, 
+      but the actual structure of the tree remains mostly unchanged (tree 1 vs tree 2). This suggests Diagnosis.Age was not
+      providing much important signal, despite the high-ranking contribution in the NB model. When Diagnosis.Age is replaced, and Mutation.Count is removed, 
+      Diagnosis.Age appears for the first time as a decision node, indicating that it does provide some signal, but Aneuploidy.Score also becomes more 
+      prominent. Certainly Fraction.Genome.Altered and Aneuploidy.Score would be expected to be correlated, so the tree relies more heavily on related features
+      to compensate for the information loss. <br>
+      As discussed above, the strengths and weaknesses of each type of model become apparent with this application, and both struggle to overcome the underrepresentation
+      of certain classes. This suggests that the best way forward with either classifier would be to oversample the mintority classes
+      and weight them appropriately to balance this. Cross-validation could also be a good strategy to improve performance. Ultimately, however, 
+      these particular features likely do not have enough signal with regard to cancer stage to be highly accurate. Certainly some of them would be expected to be correlated
+      with cancer stage, but it would be most interesting to incorporate histopathology data, especially in a multimodal context, using tissue images or clinical chart notes.
+
+
+     
+
+    
+      </p>
 
 </main>
 </div>

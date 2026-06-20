@@ -28,7 +28,6 @@ body {
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
   <li><a href="pca.html">PCA</a></li>
-  <li><a href="arm.html">Association Rule Mining</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="svms.html">Support Vector Machines</a></li>
@@ -54,7 +53,10 @@ body {
          clusters as well as the individual points, which can be done by methods such as single-linkage (the cluster distance being defined as the shortest distance between two points, one in each cluster),
           complete-linkage (greatest distance between points in the clusters), or average-linkage (mean distance between, i.e each point's distance to each other point, averaged).
           <br>
-         
+         K-means vs Hierarchical Clustering
+         While these two methods can help achieve the same objective, there are elements that make them suited for different scenarios. K-means is generally faster and works well with large datasets, but requires specifying the number of clusters in advance. 
+         Hierarchical clustering, on the other hand, does not require specifying the number of clusters and indeed can be used to make educated guesses about the optimal number of clusters, 
+         but can be computationally prohibitive, or at least difficult, for even moderately sized datasets in practice.
          <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Algoritmo_K-means_usado_na_predi%C3%A7%C3%A3o_da_base_de_dados_de_flores_de_%C3%ADris.svg/960px-Algoritmo_K-means_usado_na_predi%C3%A7%C3%A3o_da_base_de_dados_de_flores_de_%C3%ADris.svg.png" alt="K-means clustering on the Iris dataset" style="width:250px; height:250px; object-fit: cover; float: left; margin-right: 20px;" >
          <figcaption>K-means clustering on the classic Iris dataset: (Source: Wikimedia Commons)</figcaption>
@@ -67,7 +69,13 @@ body {
       <p style="font-weight: bold; text-decoration: underline;">Data Prep</p>
       <p>
         To examine incidence data with socioeconomic features, the per-county data for indcidence rates, unemployment, and education were merged together, joining on FIPS. As clustering necessitates
-        numeric data, all the categorical features were dropped, and rows with missing values were dropped 
+        numeric data, all the categorical features were dropped, and rows with missing values were dropped.
+        <figure>
+          <img src="data/USDA_economic_research_data/usda_ers_clean.png" alt="Data before merging" style="width:550px; height:150px; object-fit: cover;">
+          <img src="data/cancer_incidence_data_2023/state_cancer_cleaned.png" alt="Data before merging" style="width:550px; height:150px; object-fit: cover;">
+          <figcaption>Data before merging. </figcaption> 
+        </figure>
+<br><br>
         <figure>
           
           <img src="data/data_visualizations/clustering/clustering_screenshot.png" alt="Data after merging, dropping categorical features, and dropping rows with missing values." style="width:550px; height:150px; object-fit: cover;">

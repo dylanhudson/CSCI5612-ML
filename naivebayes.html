@@ -27,7 +27,7 @@ body {
   <li><a href="introduction.html">Introduction</a></li>
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
-  <li><a href="arm.html">Association Rule Mining</a></li>
+  <li><a href="pca.html">PCA</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="svms.html">Support Vector Machines</a></li>
@@ -40,7 +40,99 @@ body {
 
 <main>
       <h2>Naive Bayes</h2>
-      <p>Page under construction</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
+      <p>Naive Bayes is a supervised learning algorithm that probabilistically classifies data. It assumes features are independent (hence the 'naive' moniker).
+        This assumptions lets us use Bayes' theorem to calculate conditional probabilities for each class given the features by simply multiplying the
+      individual feature conditional probabilities, updating the original priors set as the distributions of the occurrences of the outcome classes.
+      Multinomial NB handles discrete categorical features with multiple options, using a <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">multinomial distribution</a> as the assumed
+      probability distribution for each such feature individually. Bernoulli NB is similar, but uses the Bernoulli distribution for binary features, i.e. those for which only two mutually exclusive
+      outcomes are possible (e.g. present vs absent for a given feature). For continuous data, a Gaussian probability distribution is assumed for the features, and the Gaussian NB model is used. 
+  Applying NB modelling to health data, especially cancer, can be a bit tricky to find appropriate scenarios, as many features are not independent, or at least cannot be assumed indepedent. 
+  Cancer stage prediction from clinical data may be an interesting application, as the outcomes are discrete and mutually exclusive. Feature choice may not be fully straightforward, 
+  as some features may still exhibit correlations, and leakage from other features that share defintions/information with the outcome variable is possible and should be avoided. 
+
+  <br>
+The <a href="https://my.clevelandclinic.org/health/diagnostics/22607-cancer-stages-grades-system" >Cleveland Clinic</a>
+      describes Stage I as there being no spread from the initial tissue site, and Stage IV as metastasis, while Stages II and III are intermediate amounts
+    of spread. The letter codes, e.g. IIA, IIIB, etc, describe the 'aggressiveness' of the cancer within each stage. </p>
+
+
+
+      <p style="font-weight: bold; text-decoration: underline;">Data Preparation</p>
+
+      <p>For this section of the project, R was used instead of Python, in order to leverage the more fleixble NB modeling that can handle mixes
+        of feature types (discrete, binary, and continuous. R uses Multinomial, Bernoulli, and Gaussian distributions for these feature types respectively). TCGA Clinical Data was used to train a model using clinical features to predict/classify the stage of disease. To prepare the data, 
+        the prevously cleaned TCGA dataset was read in to R, then subset to a specific selection of features that could hold useful signal, but are not obviously correlated with each other 
+        to minimize violations of the independence assumption. Some features were removed due to possible leakage; as things like survival time could be directly correlated with stage. 
+        Then, any rows missing the outcome data were removed (some had an empty string instead of a value). The data was then divided into disjunct training and test sets so the 
+      model can be evaluated, with 70% of the data used for training and 30% reserved for testing, using R's `sample` function, which randomly selects rows. The training sets must be disjunct to properly evaulate the model's ability to generalize. If all the data is used for training, the model may simply "memorize" the data and overfit, but it could demonstrate perfect performance on evalution. Then, in practical use, would be highly inaccurate. 
+      Some of the classes were so under-represented that they did not appears in both sets after the split.
+      The data was then filtered to retain only the stages present in both datasets.
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/nb_data_raw.png">
+          <img src="data/naive_bayes/nb_data_raw.png" alt="raw NB data" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Raw data </figcaption>
+        </figure>
+         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/nb_data_cleaned.png">
+          <img src="data/naive_bayes/nb_data_cleaned.png" alt="cleaned NB data" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Cleaned and subsetted data </figcaption>
+        </figure>
+        The cleaned data can be found <a href="data/naive_bayes/nb_data.csv">here</a>.
+        <br>
+        Train/test split example: first rows of the training set on top, and test set below; the rows are randomly assigned and exclusive to each subset.
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/nb_train_test.png">
+          <img src="data/naive_bayes/nb_train_test.png" alt="train/test split" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Train/Test Split Example </figcaption>
+        </figure>
+    </p>
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+      <p>The Jupyter notebook can be found <a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/naive_bayes/">here.</a> The HTML version can be found <a href="data/naive_bayes/nb.html">here.</a></p>
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+      Initially, the model accuracy was only approximately 9.09%. Looking at the confusion matrix and the relative class distributions, it looks like some class imbalance, with stage IIA and IIIB overrepresented:
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/stage_dist_all.png">
+          <img src="data/naive_bayes/stage_dist_all.png" alt="distribution of stages" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Distribution of stages </figcaption>
+        </figure>
+         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/conf_matrix_all_stages.png">
+          <img src="data/naive_bayes/conf_matrix_all_stages.png" alt="confusion matrix of all stages" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion matrix of all stages </figcaption>
+        </figure>
+        The infrequent classes are underrepresented, so the model struggles to overcome the prior probability of the more frequent classes. 
+        There are various ways to address this, such as class oversampling or undersampling, but with this relatively small dataset, it makes 
+        more sense to broaden the classes so there are more per class, and the targets are easier to hit, essentially.
+        After grouping the stages in to their numeric categories only, and re-training the model, the accuracy improved to 34.83%:
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/conf_matrix_simplified.png">
+          <img src="data/naive_bayes/conf_matrix_simplified.png" alt="confusion matrix of numeric stages" style="width:550px; height:350px; object-fit: cover;">
+          </a>
+          <figcaption>Confusion matrix of grouped numeric stages </figcaption>
+        </figure>
+
+      
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+      <p>This multinomial NB model performed better after simplifying the target classes into well-represented groups. The atttempt with non-simplified classes performed at only 9.09% accuracy- barely better than the 8% chance with baseline randomness that
+        would be expected with 12 classes. After grouping and simplying the classes, the accuracy was 34.83%, which is about 10% higher than the baseline randomness for 4 classes (25%). Since Naive Bayes is fairly interpretable, 
+        the feature contributions can be examined to understand which features are most influential in the model's predictions:
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/naive_bayes/feature_contributions.png">
+          <img src="data/naive_bayes/feature_contributions.png" alt="feature contributions" style="width:350px; height:250px; object-fit: cover;">
+          </a>
+          <figcaption>Feature contributions </figcaption>
+        </figure>
+        Diagnostic.Age being the top feature is a concern, as it itself is not a necessarily a causal factor for cancer progression. This could just be artifact, or there could be an underlying bias, such as the data from 
+        this particular cohort coming from a particular patient population. While features were pared down, there is also likely still correlation between Age and Mutation.Count, and Aneuploidy.Score and Fraction.Genome.Altered. It is theoretiically interesting that Cancer.Type.Detailed is the 2nd largest contributor; it could indicate that certain cancer types are more likely to be diagnosed at specific stages, which could have clinical implications like the need to develop better screening for certain types, and to screen patients earlier. However, with the underlying dataset being so small, it is probably more likely that it is simply artifact from how the patient cohorts were assembled (e.g. perhaps the data originally came from a cancer center where more severe cases are treated).
+        So the main conclusion to be drawn here is that these features are not sufficient to classify cancers by stage. This is to be expected, realistically, as most cancer stage classification would come from imaging and histopathology
+        data in a real clinical setting. If correlation/feature interaction is part of the problem, a classifer like <a href = "dectrees.html">Decision Trees </a>  might be more appropriate for capturing that. 
+     </p>
 
 </main>
 </div>
