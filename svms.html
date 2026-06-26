@@ -6,14 +6,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
 <link rel="stylesheet" href="style.css">
-<style>
-body {
-  font-family: 'Alegreya', 'Times New Roman', Times, serif, sans-serif;
-  margin: 20px;
-  background-color: #d6cccc;
-}
-</style>
-
 
     <title>CSCI 5612 Machine Learning Project</title>
     <h1>CSCI 5612 Machine Learning Project - Summer 2026</h1>
@@ -27,9 +19,9 @@ body {
   <li><a href="introduction.html">Introduction</a></li>
    <li><a href="dataprep.html">Data Preparation and EDA</a></li>
   <li><a href="clustering.html">Clustering</a></li>
-  <li><a href="arm.html">Association Rule Mining</a></li>
-  <li><a href="dectrees.html">Decision Trees</a></li>
+  <li><a href="pca.html">PCA</a></li>
   <li><a href="naivebayes.html">Naive Bayes</a></li>
+  <li><a href="dectrees.html">Decision Trees</a></li>
   <li><a href="svms.html">Support Vector Machines</a></li>
 <li><a href="regression.html">Regression</a></li>
   <li><a href="nn.html">Neural Networks</a></li>
@@ -40,7 +32,200 @@ body {
 
 <main>
       <h2>Support Vector Machines</h2>
-      <p>Page under construction</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
+      <p>
+        Support Vector Machines are a type of supervised machine learning algorithm used to classify datasets into 2 classes (or stacking multiple for multi-class classifiers) using a linear boundary that maximizes the distance between each class and the 
+        decision boundary (a line, plane, or hyperplane depending on the dimensions of the data). The name comes from the term for the training data points adjacent to the boundary- as these points are in the coordinate space, they are technically
+        vectors, and termed the "support" vectors, which are used to define the boundary. 
+        SVMs are fundamentally linear separators as defined by the boundary equation they produce: f(x)=wx+b, where w is the weight vector, x is the input data point vector, and b is the bias, as in a standard
+        linear equation. This equation defines the boundary as a line/plane/hyperplane, so when a data point x is evaluated, f(x) is positive for points on side of the boundary, and negative for the other side.
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/960px-SVM_margin.png" alt="SVM linear example" style="width:250px; height:250px;">
+         <figcaption><i>An example of a linear SVM boundary and margin. (Source: Wikimedia Commons). The red line is the decision boundary, the dotted lines intersect the data points known as the support
+          vectors. </i>
+         </figcaption>
+        </figure>
+        <br>
+        Sometimes, the data cannot be linearly separated in its feature space. In such nonlinear cases, the data can be mapped to a higher-dimensional space where a linear separation is possible; this linear boundary
+        is then projected back into the original space, creating a non-linear boundary in the original space. Unfortunately, the dimension increase required to achieve a linear boundary can be extremely computationally intensive,
+        as each data vector must be transformed by a mapping function (usually written as ϕ(x)) into a potentially much larger vector. As vector math operations scale with the dimensionality of the vectors,
+        the computational cost can quickly get out of control as the boundary function requires a vector dot product, which would be extremely expensive in the higher-dimensional space.
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="data/data_visualizations/kernel_visual/kernel_example.png" alt="SVM linear example" style="width:400px; height:250px;">
+         <figcaption><i>An example of projecting non-linearly separable data from 2-d to 3-d, creating a linear separation in the higher-dimensional space. (Source: python code <a href="data/data_visualizations/kernel_visual/">here </a>) </i>
+         </figcaption>
+        </figure>
+        Because of this potential computational burden, the "kernel trick" is used. The kernel function is devised such that the dot product in the boundary function can be computed at the lower dimension, wrapping it in
+        less computationally expensive operations that yield the same output as a high-dimensional computation, but only requiring the lower-dimensional dot product actually be computed. 
+        <br>
+        Another parameter available is "Cost", which controls how much the model penalizes misclassification during training. This allows control of the bias/variance tradeoff, i.e. underfitting/overfitting. 
+        <br>
+        In this section, an SVM is trained to classify cancer types based on proteomic profile, a set of high-dimensional assays describing how much of many different proteins are present in the tissue sample.
+        There are four cancer types in the dataset from distinct anatomical locations- breast, uterine, pancreatic, and colorectal.
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Data Preparation</p>
+      <p>SVMs can only work on scaled, numeric data, as they must calculate distances between vectors in a coordinate space. As such, any NaN values must be replaced or removed, and categorical features 
+        must be converted to numeric (e.g. through one-hot encoding). In this section, a cancer-type classified is built from proteomic assay values. Most of this data is numeric, but many rows have NaN values. Because
+        not all proteins are measured in each assay, nearly all rows have missing values as there are nearly 12,000 individual protein features. 
+<figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="data/svm/raw_protein_data.png" alt="Protein data before label separation, normalization, and missing value imputation" style="width:400px; height:100px;">
+         <figcaption><i>Protein data before label separation, normalization, and missing value imputation. </i>
+         </figcaption>
+        </figure>
+        
+      <br> To prepare the PDC clinical data, first all the categorical columns were removed except for the label, cancer_type, which are separated to a different data frame. Then the data was 
+      standardized so any larger values do not dominate the distance calculations. Then, NaN values were imputed using the mean of the present values in each feature. 
+
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="data/svm/cleaned_protein_data.png" alt="Protein data after label separation, normalization, and missing value imputation" style="width:400px; height:125px;">
+         <figcaption><i>Protein data after label separation, normalization, and missing value imputation. </i>
+         </figcaption>
+        </figure>
+          Then the data was divided into training at testing sets, 70% for training, 30% for testing, assigned at random by the dataframe sample() function. These must be disjoint to avoid overfitting the model, and getting inflated accuracy metrics that only really show that
+          the model memorized the data. 
+
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="data/svm/train_data.png" alt="Train dataset" style="width:270px; height:125px;">
+         <br>
+         <img src="data/svm/test_data.png" alt="Test dataset" style="width:270px; height:125px;">
+         <figcaption><i>Train and test datasets. </i>
+         </figcaption>
+        </figure>
+      
+      
+
+      </p>
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+      The code can be found <a href="/data/svm/svm.ipynb">here</a>. The HTML Jupyter notebook is <a href="/data/svm/svm.html">here</a>.
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+      Despite the data having 11,937 features, the SVM models peformed very well. This table shows the accuracy for 3 different kernels across several cost values: <br>
+      <br>
+      <table border=".1">
+  <tr>
+    <th>Kernel</th>
+    <th>C = 0.1</th>
+    <th>C = 1</th>
+    <th>C = 10</th>
+    <th>C = 100</th>
+  </tr>
+  <tr>
+    <td>RBF</td>
+    <td>0.4778</td>
+    <td>0.9754</td>
+    <td>0.9852</td>
+    <td>0.9852</td>
+  </tr>
+  <tr>
+    <td>Polynomial</td>
+    <td>0.3793</td>
+    <td>0.4828</td>
+    <td>0.6847</td>
+    <td>0.7340</td>
+  </tr>
+  <tr>
+    <td>Linear</td>
+    <td>0.9655</td>
+    <td>0.9655</td>
+    <td>0.9655</td>
+    <td>0.9655</td>
+  </tr>
+</table>
+<br>
+  Plotting this, it can be seen clearly that the RBF kernel achives the best performance when cost is sufficient, linear is extremely stable for any cost, and the poly kernel performs poorly even with higher cost. 
+  <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="data/svm/cost_kernel_accuracy.png" alt="Cost vs Accuracy for Different Kernels" style="width:500px; height:400px;">
+         <figcaption><i>Cost vs Accuracy for Different Kernels. </i>
+         </figcaption>
+        </figure>
+
+        The confusion matrices for cost = 10:
+        <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+          <a href="data/svm/conf_matrix_all_kernels.png">
+         <img src="data/svm/conf_matrix_all_kernels.png" alt="Confusion Matrices for Cost = 10" style="width:500px; height:200px;">
+          </a>
+         <figcaption><i>Confusion Matrices for Cost = 10. (click to see full size)</i>
+         </figcaption>
+        </figure>
+        <br>
+        The kernel performances are quite distinct. The highly stable performance of the linear kernel despite any cost change suggests that there is a clear linearly separable decision boundary inherent
+        in the data. However, the RBF kernel performs slightly better with a sufficient cost, suggesting that there is some non-linearity to capture in the boundary. The poly kernel performs poorly, underfitting
+        substantially even with high cost. Tuning other hyperparameters would probably be necessary to develop performance with the poly kernel. <br>
+        Since the linear kernel performed well, some model interpretation can be done through examining the weights and sorting them by their absolute values to identify the most important features.
+        The top-10 proteins by significance are: <br><br>
+<table border="1">
+  <tr>
+    <th>Feature</th>
+    <th>Weight</th>
+    <th>Abs Weight</th>
+  </tr>
+  <tr>
+    <td>CRYBG1</td>
+    <td>-0.010313</td>
+    <td>0.010313</td>
+  </tr>
+  <tr>
+    <td>VCAM1</td>
+    <td>-0.008583</td>
+    <td>0.008583</td>
+  </tr>
+  <tr>
+    <td>RETN</td>
+    <td>-0.008257</td>
+    <td>0.008257</td>
+  </tr>
+  <tr>
+    <td>PROM1</td>
+    <td>-0.007319</td>
+    <td>0.007319</td>
+  </tr>
+  <tr>
+    <td>SUB1</td>
+    <td>-0.006314</td>
+    <td>0.006314</td>
+  </tr>
+  <tr>
+    <td>ARMT1</td>
+    <td>-0.006297</td>
+    <td>0.006297</td>
+  </tr>
+  <tr>
+    <td>FABP6</td>
+    <td>0.006165</td>
+    <td>0.006165</td>
+  </tr>
+  <tr>
+    <td>CPB1</td>
+    <td>-0.006139</td>
+    <td>0.006139</td>
+  </tr>
+  <tr>
+    <td>EGFR</td>
+    <td>-0.005981</td>
+    <td>0.005981</td>
+  </tr>
+  <tr>
+    <td>CLIC6</td>
+    <td>-0.005962</td>
+    <td>0.005962</td>
+  </tr>
+</table>
+<br>
+As expected, with so many complex and correlated dimensions, the individual features aren't extremely highly-weighted, but perhaps there is some biological interest to be found in which 
+have the most significance in the model. 
+
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+      While this classifier is quite accurate, that is not exactly unexpected. As tissues in the body express highly varied and differing sets of proteins according to their function, this classifier
+      could simply be identifying different tissue regions instead of cancer presence, per se. If proteomic assays for healthy tissues were available for comparison, a classifier to diagnose the cancer types
+      could be constructed, possibly a more interesting application. However, the high accuracy with relatively simple models (each took less than a second of wall-clock time to train), suggests that there is
+      indeed much useful signal in protein profiles, and that imputing missing values with the column means did not create excessive noise. If performance dropped, or was found to be more challenging in more advanced classfication, 
+      e.g. cancer subtypes distinction for the same tissues, there may be more to explore with dimensionality reduction, feature selection, and imputation techniques.  
+    <br>
+    Looking at the most significant proteins in the weights table above could perhaps drive some investigation into proteins and their roles in various cancers. For example, the top protein, CRYBG1, is known to help maintain
+    intra-cellular rigidity, and loss of this function is <a href="https://www.ukbiobank.ac.uk/projects/defining-the-role-of-crybg1-germline-alterations-on-tumor-incidence-and-progression/">associated with tumor growth and cancer spread,</a>
+    as the loss of its structure can allow the cell to migrate through tissues and invade other parts of the body.
+
+
+    
 
 </main>
 </div>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
 .navbar ul {
   list-style-type: none;
   margin: 0;
@@ -8,21 +10,22 @@
 
 li a {
   display: block;
+  border-radius: 4px;
   color: black;
   padding: 8px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: #555555;
-  color: #ffffff;
+  background-color: #a09c9c;
+  color: #6d4191;
 }
 
 .navbar .nav-links {
 /* vertical line to separate nav bar from content */
   
   border-right: #555555 solid 1px;
-  background-color: #d5d1d1;
+  background-color: #e7ded0;
   overflow: hidden;
 }
 
@@ -42,7 +45,21 @@ main ul {
 
 body {
   font-size: 1.2rem;
-  font-family: 'Alegreya', 'Times New Roman', Times, serif, sans-serif;
+  font-family: 'DM Sans', 'Times New Roman', Times, serif, sans-serif;
+  font-style: normal;
   margin: 20px;
-  background-color: #d5d1d1;
+  background-color: #e7ded0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+figure {
+  border-radius: 4px;
+}
+
+img {
+  border-radius: 6px;
 }
