@@ -38,14 +38,13 @@
       individual feature conditional probabilities, updating the original priors set as the distributions of the occurrences of the outcome classes.
       Multinomial NB handles discrete categorical features with multiple options, using a <a href="https://en.wikipedia.org/wiki/Multinomial_distribution">multinomial distribution</a> as the assumed
       probability distribution for each such feature individually. Bernoulli NB is similar, but uses the Bernoulli distribution for binary features, i.e. those for which only two mutually exclusive
-      outcomes are possible (e.g. present vs absent for a given feature). For continuous data, a Gaussian probability distribution is assumed for the features, and the Gaussian NB model is used. 
-  Applying NB modelling to health data, especially cancer, can be a bit tricky to find appropriate scenarios, as many features are not independent, or at least cannot be assumed indepedent. 
-  Cancer stage prediction from clinical data may be an interesting application, as the outcomes are discrete and mutually exclusive. Feature choice may not be fully straightforward, 
-  as some features may still exhibit correlations, and leakage from other features that share defintions/information with the outcome variable is possible and should be avoided. 
+      outcomes are possible (e.g. present vs absent for a given feature). For continuous data, a Gaussian probability distribution is assumed for the features, and the Gaussian NB model is used.  
   An important part of the Naive Bayes probability calculation is 'smoothing.' As the model is built by multiplying the conditional probabilities for each feature, any given feature probability of zero 
   cancels out the entire calculation, reducing the entire probability to zero, removing any signal from the other features. Smoothing adds a small constant (usually denoted as alpha)
    to both the numerator and denominator of the Bayes' theorem calculation, ensuring no feature probability is ever zero and the overall probability remains meaningful.
-  <br>
+  <br><br>Applying NB modelling to health data, especially cancer, can be a bit tricky to find appropriate scenarios, as many features are not independent, or at least cannot be assumed indepedent. 
+  Cancer stage prediction from clinical data may be an interesting application, as the outcomes are discrete and mutually exclusive. Feature choice may not be fully straightforward, 
+  as some features may still exhibit correlations, and leakage from other features that share defintions/information with the outcome variable is possible and should be avoided.
 The <a href="https://my.clevelandclinic.org/health/diagnostics/22607-cancer-stages-grades-system" >Cleveland Clinic</a>
       describes Stage I as there being no spread from the initial tissue site, and Stage IV as metastasis, while Stages II and III are intermediate amounts
     of spread. The letter codes, e.g. IIA, IIIB, etc, describe the 'aggressiveness' of the cancer within each stage. </p>
