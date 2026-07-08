@@ -22,9 +22,7 @@
   <li><a href="pca.html">PCA</a></li>
    <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
- 
   <li><a href="svms.html">Support Vector Machines</a></li>
-<li><a href="regression.html">Regression</a></li>
   <li><a href="nn.html">Neural Networks</a></li>
   <li><a href="conclusions.html">Conclusions</a></li>
 </ul>
@@ -33,7 +31,199 @@
 
 <main>
       <h2>Neural Networks</h2>
-      <p>Page under construction</p>
+      <p style="font-weight: bold; text-decoration: underline;">Overview</p>
+      <p>Neural networks are a type of machine-learning model loosely based on human-brain neurons and neural architectures. The underlying data structure is a graph, where the 'neurons'
+        are nodes, and the connections beteween them (synapses) are edges. Each neuron receives input as a real number, and computes output based on its 'activation function.' Edges
+      are weighted, scaling the output of the neuron before it is passed to the next neuron. Neurons are grouped into layers, with the input layer mirroring the input data features, 
+      hidden layers performing intermediate computations, and the output layer producing the final predictions in the scale of the target output, i.e. a single scalar for a binary classifier, or
+    a vector for multiple-classes, etc.      </p>
+
+    <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Neural_network_explain.png?_=20211111130354" alt="Neural Network example" style="width:400px; height:250px;">
+         <figcaption><i>An example of a neural network structure, showing input, hidden, and output layers. (Source: Wikimedia Commons) </i>
+         </figcaption>
+    </figure>
+    Initially, the weights and biases of the NN are set to random values. Data is then passed forward through the network, resulting in activations of the output layer than translate to 
+    the particular class predictions. These predictions are then compared to the actual desired output (calculating the loss), and the error is 'backpropagated' 
+    in reverse through the network, updating the weights and biases of each neuron. Backpropagation is a crucial step for 'learning', in which the gradient of the 
+    loss with respect to each weight and bias is computed. Basically, the neural net can be considered as one large nested function- the final loss is a function of the output neurons, which are
+    functions of the previous layer neurons, etc etc, all the way back to the input layer: loss(output(final_hidden_layer(hidden_layer(input())))). Using calculus, 
+    the chain rule describes taking the derivative for nested functions <i>f(g(x))</i>, so this can be used to compute the gradient of each neuron's contibution to the loss, and the amount of that contribution. Unwrapping
+    this function is proceeding backward through the network, which allows the information from the overall loss to be propagated to each neuron.
+  This indicates how much and in which direction (i.e. positive or negative) to update each neuron; this is then scaled by the learning rate hyperparameter to moderate the training process. 
+
+
+    <br>
+    <br>
+    One subtype of neural network modeling is the Graph Neural Network (GNN). This allows data with inherent structural or spatial relationships to be modeled
+    using that structure, instead of the inherent positions of data in the input data matrix. In this project, the data being modeled is county-level data in the US, and certain features (like pesticide application)
+    presumably have geographical relationships. To preserve and leverage these inherent relationships, a graph representation of the data (i.e. an adjacency matrix) is constructured
+    prior to training/testing, and the GNN can then leverage this adjacency information to incorporate information from neighboringcounties according to the graph structure. Specifically, this project
+    uses graph convolutional networks (GCNs); in standard Convolutional Neural Network, convolutions occur over spatially local regions as defined by the actual locations of the data
+    in the matrix, i.e. the neighboring rows and columns. This makes sense when the data is directly spatially related, like pixels in images. A GCN allow this spatial relationship to be separated
+    from the actual data matrix, and use a graph structure to describe the actual relationships. The graph connectivity is input to the GCN along with the feature data, acting as a sort of reference for which nodes
+    have which neighbors, and what the relative weights of each 'neighboring' feature set should be. 
+    <br>
+    <br>
+    For this project, GCNs are used to build a cancer-risk classifier for counties based on pesticide application data, smoking, education, and employment features. During <a href="clustering.html">clustering</a> performed on geographic and socioeconomic features, some clusters emerged that suggested the presence of distinct geographic groupings beyond just the socioeconomic indicators. This motivated the choice to use a graph-based neural network to explicitly model the geographic relationships between counties so as to preserve any signal in the geographic structure that might be relevant for predicting cancer risk. For additional biological motivation, 
+    7 cancer subtypes are used as separate targets, so 7 models are trained, one for each subtype. Ultimately, the model needs to produce a classification prediction; to do this, a threshold is applied
+    to the real-number output reprsenting predicted incidence rate to convert it into a binary classifier; this then represents whether the county is predicted to be high or low cancer risk for the given subtype. This incidence threshold
+    is defined using median of the incidence rates in the training data, i.e. high = above the median, low = below the median (what actually constitutes high risk may be more of a medical and public health question- calibrating
+    this threshold requires more intensive domain research).
+
+      <p style="font-weight: bold; text-decoration: underline;">Data Prep</p>
+      Seven individual cancer subtype county-level incidence datasets were downloaded from the <a href="https://statecancerprofiles.cancer.gov/"> State Cancer Profiles</a> website: Lung, Non-Hodgkins Lymphoma
+      Colorectal, Breast, Leukemia, Prostate, and Bladder. 
+While most of the raw data from each source has been already cleaned, there was significant work to do to properly merge the datasets together, scale and impute properly, and ensure that the final dataset was suitable for input into the graph convolutional network.
+In this case, incidence rates by county serve as the 'labels', and thus each of the 7 cancer subtype datasets needed to be merged into to the feature set. First, the pesticide application by county data was read in and merged with 
+overall cancer rate incidence data by county for some EDA; later this ended up being dropped to avoid data leakage from the overall cancer rates. Then, each of the 7 cancer subtype incidence datasets were read in
+and merged on county. These 7 datasets each had missing values - some were "*", representing suppressed data when total cases were too low to provide stable reporting, and some were simply blank, and some were strings "P1-note",
+which indicated that the data was not reported (this was the case for all of Kansas). To keep only the numeric data and standardize the missing values, the columns were converted to numeric
+with error coercion, converting all missing data to NaNs. Rather than impute, which could bias the signal due to the different types of missing values, this meant that the 
+model would need to handle different sets of missing values across each dataset- requiring a mask to indicate which nodes had valid data for each feature for each training run. <br>
+To handle missing pesticide data, the US Census county adjacency information was read in and used to calculate a mean for any missing county based on its neighboring counties to retain
+as much geospatial signal as possible (using the supplied border lengths as weights). 
+Next, all the cancer types were merged with the pesticide data using the "FIPS" county code column to join by county. Then, socioeconomic data from the USDA economic research service was read in, including
+unemployment rates by county, and various measures of education level. Smoking rate data was read in from the <a href="https://www.cdc.gov/places/index.html"> CDC PLACES </a>database. All but two of the education features were dropped to avoid redundancy. Missing values were imputed by taking the mean for each feature. 
+These data were joined with the main dataframe on FIPS. Features were then standardized. Finally, the features were transformed into a PyTorch tensor data structure as required for input to the neural net, 
+and the county adjancency list was converted into a PyTorch tensor as well to provide the graph structure for the neural network.  The labels were created by thresholding the numeric incidence rates into 
+boolean high or low incidence indicators- so the actual labels themselves are ultimately just a boolean vector with 0 for low incidence counties, 1 for high, and NaN for masked nodes (missing counties in the incidence dataset).
+
+
+      <p style="font-weight: bold; text-decoration: underline;">Code</p>
+    The code for this project can be found <a href="https://github.com/dylan/CSCI5612-ML">here</a>. The HTML rendering of the jupyter notebook is <a href="data/nn/nn.html">here</a>.
+
+
+      <p style="font-weight: bold; text-decoration: underline;">Results</p>
+      <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+        <a href="data/nn/nn_arch.png">
+         <img src="data/nn/nn_arch.png" alt="GCN Architecture" style="width:600px; height:320px;">
+        </a>
+         <figcaption><i>The architecture of the GCN used in this project, showing the layers, activation functions, and classification. (Click for full size) </i>
+         </figcaption>
+</figure>
+<br><br>
+All classifiers performed meaningfully better than random chance (all AUCs are above 0.5, see below table). Lung cancer classification performed the best, possibly due to the extremely strong
+link between smoking and lung cancer. <br>
+  Accuracy and AUC for each classifier:
+  <table border="1">
+  <thead>
+      <tr>
+    <th>Cancer type</th>
+  <th>Accuracy</th>
+      <th>AUC</th>
+     </tr>
+  </thead>
+  <tbody>
+  <tr><td>NHL</td><td>0.643</td><td>0.687</td></tr>
+   <tr><td>Lung</td><td>0.764</td><td>0.837</td></tr>
+ <tr><td>Bladder</td><td>0.698</td><td>0.754</td></tr>
+  <tr><td>Prostate</td><td>0.687</td><td>0.765</td></tr>
+   <tr><td>Leukemia</td><td>0.577</td><td>0.612</td></tr>
+   <tr><td>Colorectal</td><td>0.651</td><td>0.702</td></tr>
+     <tr><td>Breast</td><td>0.632</td><td>0.688</td></tr>
+  </tbody>
+</table>
+<br><br>
+         Overall comparison of classifier accuracy by cancer type:
+         <figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+        <a href="data/nn/classifier_accuracy_comparison.png">
+         <img src="data/nn/classifier_accuracy_comparison.png" alt="Classifier Accuracy Comparison" style="width:600px; height:450px;">
+        </a>
+         <figcaption><i>Overall comparison of classifier accuracy by cancer type. (Click for full size) </i>
+         </figcaption>
+         </figure>
+
+         <br>
+         Training loss progression by epoch is shown here for each cancer type classifer along with the final confusion matrix:
+         <div class="figure-container">
+  <figure>
+    <img src="data/nn/nhl_training_loss_200epoch.png" alt="training loss for NHL">
+    <figcaption>Figure 1: Training loss progression by epoch for the NHL (Non-Hodgkin Lymphoma) classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/conf_matrix_NHL.png" alt="Confusion matrix for NHL (Non-Hodgkin Lymphoma)">
+    <figcaption>Figure 2: Final confusion matrix for the NHL classifier.</figcaption>
+  </figure>
+</div>
+    <div class="figure-container">
+  <figure>
+    <img src="data/nn/lung_train_loss.png" alt="training loss for Lung Cancer">
+    <figcaption>Figure 1: Training loss progression by epoch for the Lung Cancer classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/Conf_Matrix_Lung.png" alt="Confusion matrix for Lung Cancer">
+    <figcaption>Figure 2: Final confusion matrix for the Lung Cancer classifier.</figcaption>
+  </figure>
+</div>
+    <div class="figure-container">
+  <figure>
+    <img src="data/nn/leukemia_train_loss.png" alt="training loss for Leukemia">
+    <figcaption>Figure 1: Training loss progression by epoch for the Leukemia classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/leukemia_conf_matrix.png" alt="Confusion matrix for Leukemia">
+    <figcaption>Figure 2: Final confusion matrix for the Leukemia classifier.</figcaption>
+  </figure>
+</div>
+    <div class="figure-container">
+  <figure>
+    <img src="data/nn/bladder_train_loss.png" alt="training loss for Bladder Cancer">
+    <figcaption>Figure 1: Training loss progression by epoch for the Bladder Cancer classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/bladder_conf_matrix.png" alt="Confusion matrix for Bladder Cancer">
+    <figcaption>Figure 2: Final confusion matrix for the Bladder Cancer classifier.</figcaption>
+  </figure>
+</div>
+    <div class="figure-container">
+  <figure>
+    <img src="data/nn/train_loss_prostate.png" alt="training loss for Prostate Cancer">
+    <figcaption>Figure 1: Training loss progression by epoch for the Prostate Cancer classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/prostate_conf_matrix.png" alt="Confusion matrix for Prostate Cancer">
+    <figcaption>Figure 2: Final confusion matrix for the Prostate Cancer classifier.</figcaption>
+  </figure>
+</div>
+ <div class="figure-container">
+  <figure>
+    <img src="data/nn/colorectal_train_loss.png" alt="training loss for Colorectal Cancer">
+    <figcaption>Figure 1: Training loss progression by epoch for the Colorectal Cancer classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/colorectal_conf_matrix.png" alt="Confusion matrix for Colorectal Cancer">
+    <figcaption>Figure 2: Final confusion matrix for the Colorectal Cancer classifier.</figcaption>
+  </figure>
+</div>
+ <div class="figure-container">
+  <figure>
+    <img src="data/nn/breast_train_loss.png" alt="training loss for Breast Cancer">
+    <figcaption>Figure 1: Training loss progression by epoch for the Breast Cancer classifier.</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="data/nn/breast_conf_matrix.png" alt="Confusion matrix for Breast Cancer">
+    <figcaption>Figure 2: Final confusion matrix for the Breast Cancer classifier.</figcaption>
+  </figure>
+</div>
+ <br>
+All of the training runs showed appropriate loss progression, indicating successful learning during training. Initial training at 200 epochs showed steady decreases; increasing to 300 epochs showed the gradient flattening out, indicating approaching convergence. The confusion matrices are interesting, and show differing ratios of false postiives and negatives. For example, Lung and Colorectal cancer show fairly balanced errors rates, while Non-Hodgkin's Lymphoma shows almost double the number of false positives vs false negatives, and breast cancer has about 50% false negatives to false positives. Sometimes the model is over-reporting high risk, and sometimes it underreports. These different scenarios suggest that each separate type classifier might benefit from threshold calibration, depending on its ratio and the desired goals/ relative costs. 
+
+
+      <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
+      These results are fairly interesting and show that the neural net was able to derive some useful signal from the data for classifying rates for each type of cancer, though performance varies. Lung cancer performed the best, 
+      possibly because of the inclusion of smoking rates as a feature, for which would be expected the strongest biological connection to cancer risk. While not specifically testing a hypothesis with this model, the implied question is whether the neural net can capture complex and non-linear relationships between cancer incidence and pesticide exposure, education level, unemployment, and smoking rates. Each of these feature types is not only a proxy for many other features- e.g. unemployment affects access to health care and nutrition, and education level affects health literacy and behaviors, making the relationships complex and indirect- but also may simply indicate the presence of other unmeasured factors, correlations, or causal elements.  Overall, these results suggest that the neural net is able to pick up on some meaningful patterns, but careful interpretation and further study would be needed to understand the underlying relationships. While there are established correlations between socioeconomic disadvantage and higher incidence of health issues, the <a href="clustering.html"> clustering analysis</a> showed some geographic patterns that may have indicated the presence of other 
+      factors, and/or non-linear relationships. <br> <br>
+      Although the accuracy of the classifiers is certainly not high enough to indicate any strong relationships or useful predictive power, it does confirm that there is some signal in the data, and suggests some avenues for further study. Pesticides interact with the environment and human health in many biological and chemical ways, not to mention other important factors that maybe simply be correlated with pesticide use. For example, Propiconazole is a fungicide used for turfgrasses. It is a <a href="https://sitem.herts.ac.uk/aeru/ppdb/en/Reports/551.htm"> known endocrine disruptor</a>, which may have indirect influence on cancer risk, but also may act as a proxy for populations that are more likely to live in areas with large amounts of high turfgrass- such as golf communities. Propiconazole is the strongest correlative feature in the set for prostate cancer; perhaps it is just a proxy for areas that have aging male populations? This is just one example of how a feature may appear important, but careful interpretation is needed to understand what it truly represents. As such, this model may serve to raise questions, but sorting out more detailed causal effects and confounding factors is immensely intensive. With further investigation, these patterns could be better understood and potentially linked to specific features or interactions that the neural net is capturing. To investigate the model performance thoroughly, additional experiments, ablation studies, and feature importance analyses would be necessary to better understand what the model has learned and why it performs as it does. PyTorch provides tools to facilitate such analyses, including ways to inspect model weights, gradients, and feature contributions, which would be useful in this context. <br><br>
+      Another challenge with this particular modeling approach is that the number of samples is far below the ideal amount of data for effective neural net modeling, with just one record per county. Either higher-resolution data within each county, or pseudo-replication to increase the effective number of samples (e.g. as features change over time) would be needed to better support neural net training and avoid overfitting. 
+
 
 </main>
 </div>

@@ -23,9 +23,7 @@
   <li><a href="pca.html">PCA</a></li>
     <li><a href="naivebayes.html">Naive Bayes</a></li>
   <li><a href="dectrees.html">Decision Trees</a></li>
-
   <li><a href="svms.html">Support Vector Machines</a></li>
-<li><a href="regression.html">Regression</a></li>
   <li><a href="nn.html">Neural Networks</a></li>
   <li><a href="conclusions.html">Conclusions</a></li>
 </ul>
@@ -44,7 +42,9 @@
   Applying NB modelling to health data, especially cancer, can be a bit tricky to find appropriate scenarios, as many features are not independent, or at least cannot be assumed indepedent. 
   Cancer stage prediction from clinical data may be an interesting application, as the outcomes are discrete and mutually exclusive. Feature choice may not be fully straightforward, 
   as some features may still exhibit correlations, and leakage from other features that share defintions/information with the outcome variable is possible and should be avoided. 
-
+  An important part of the Naive Bayes probability calculation is 'smoothing.' As the model is built by multiplying the conditional probabilities for each feature, any given feature probability of zero 
+  cancels out the entire calculation, reducing the entire probability to zero, removing any signal from the other features. Smoothing adds a small constant (usually denoted as alpha)
+   to both the numerator and denominator of the Bayes' theorem calculation, ensuring no feature probability is ever zero and the overall probability remains meaningful.
   <br>
 The <a href="https://my.clevelandclinic.org/health/diagnostics/22607-cancer-stages-grades-system" >Cleveland Clinic</a>
       describes Stage I as there being no spread from the initial tissue site, and Stage IV as metastasis, while Stages II and III are intermediate amounts

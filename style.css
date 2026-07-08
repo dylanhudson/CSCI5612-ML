@@ -63,3 +63,38 @@ figure {
 img {
   border-radius: 6px;
 }
+
+
+.figure-container {
+  display: flex;
+  justify-content: space-between; /* Spreads the figures apart */
+  gap: 20px; /* Space between the two figures */
+  width: 100%;
+}
+
+.figure-container figure {
+  margin: 0;
+  width: 48%; /* Each figure takes up nearly half the width */
+}
+
+.figure-container img {
+  width: 100%; /* Ensures images fill their figure container */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+}
+
+.figure-container figcaption {
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* Optional: Stacks figures vertically on smaller screens */
+@media (max-width: 768px) {
+  .figure-container {
+    flex-direction: column;
+  }
+  .figure-container figure {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
