@@ -71,6 +71,8 @@
     is defined using median of the incidence rates in the training data, i.e. high = above the median, low = below the median (what actually constitutes high risk may be more of a medical and public health question- calibrating
     this threshold requires more intensive domain research).
 
+    <br>
+    Note on datasets and disease latency: Cancer is known to take potentially many years to develop after exposure to carcinogens or other risk factor. This latency complicates modelling efforts; in this project, state cancer incidence datasets contain data from 2018-2022. The pesticide application data is from 2002, and socioeconomic data is aggregated over the 2000- 2010. Smoking data is from 2025 and thus represents a future time point relative to the cancer incidence data.  IT seems reasonable to conclude that smoking rates are relatively stable with regard to geography, and have decreased over time, so any expected change would simply lower the overall signal and not fundamentally alter the geographic patterns that the model is attempting to learn. However this temporal mismatch is a limitation of the dataset and should be considered when interpreting model results.
       <p style="font-weight: bold; text-decoration: underline;">Data Prep</p>
       Seven individual cancer subtype county-level incidence datasets were downloaded from the <a href="https://statecancerprofiles.cancer.gov/"> State Cancer Profiles</a> website: Lung, Non-Hodgkins Lymphoma
       Colorectal, Breast, Leukemia, Prostate, and Bladder. 
@@ -78,20 +80,39 @@ While most of the raw data from each source has been already cleaned, there was 
 In this case, incidence rates by county serve as the 'labels', and thus each of the 7 cancer subtype datasets needed to be merged into to the feature set. First, the pesticide application by county data was read in and merged with 
 overall cancer rate incidence data by county for some EDA; later this ended up being dropped to avoid data leakage from the overall cancer rates. Then, each of the 7 cancer subtype incidence datasets were read in
 and merged on county. These 7 datasets each had missing values - some were "*", representing suppressed data when total cases were too low to provide stable reporting, and some were simply blank, and some were strings "P1-note",
-which indicated that the data was not reported (this was the case for all of Kansas). To keep only the numeric data and standardize the missing values, the columns were converted to numeric
+which indicated that the data was not reported (this was the case for all of Kansas). 
+<figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+        <a href="data/nn/nn_data_sample.png">
+         <img src="data/nn/nn_data_sample.png" alt="Training data sample" style="width:640px; height:130px;">
+        </a>
+         <figcaption><i>Example of the training data, post-merge, but prior to imputation.</i>
+         </figcaption>
+</figure>
+
+To keep only the numeric data and standardize the missing values, the columns were converted to numeric
 with error coercion, converting all missing data to NaNs. Rather than impute, which could bias the signal due to the different types of missing values, this meant that the 
 model would need to handle different sets of missing values across each dataset- requiring a mask to indicate which nodes had valid data for each feature for each training run. <br>
 To handle missing pesticide data, the US Census county adjacency information was read in and used to calculate a mean for any missing county based on its neighboring counties to retain
 as much geospatial signal as possible (using the supplied border lengths as weights). 
 Next, all the cancer types were merged with the pesticide data using the "FIPS" county code column to join by county. Then, socioeconomic data from the USDA economic research service was read in, including
 unemployment rates by county, and various measures of education level. Smoking rate data was read in from the <a href="https://www.cdc.gov/places/index.html"> CDC PLACES </a>database. All but two of the education features were dropped to avoid redundancy. Missing values were imputed by taking the mean for each feature. 
-These data were joined with the main dataframe on FIPS. Features were then standardized. Finally, the features were transformed into a PyTorch tensor data structure as required for input to the neural net, 
+These data were joined with the main dataframe on FIPS. Features were then standardized. The prepared training data can be downloaded <a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/nn/merged_nn_data.csv">here</a>.
+
+Finally, the features were transformed into a PyTorch tensor data structure as required for input to the neural net, 
 and the county adjancency list was converted into a PyTorch tensor as well to provide the graph structure for the neural network.  The labels were created by thresholding the numeric incidence rates into 
 boolean high or low incidence indicators- so the actual labels themselves are ultimately just a boolean vector with 0 for low incidence counties, 1 for high, and NaN for masked nodes (missing counties in the incidence dataset).
-
+With the data prepared, a train/test split was created for each cancer subtype by randomly select disjunct sets of indices for which data was present for each cancer type, yielding two vectors containing the indicies:
+<figure style="margin-top: 20px; margin-bottom: 20px; display: flex; flex-direction: column; align-items: center;">
+        <a href="data/nn/train_test_nn.png">
+         <img src="data/nn/train_test_nn.png" alt="Train/test split indices" style="width:370px; height:35px;">
+        </a>
+         <figcaption><i>Example of the train/test split indices for the neural network.</i>
+         </figcaption>
+</figure>
+As these splits are created only from rows where label data is present for that cancer subtype, these also act as masks for the county graph, as the rows contain the FIPS county code. A train_classifier() wrapper function was defined to accept these masks as input, ensuring the model only trains on the indices present in the designated training set. Keeping the two sets disjunct, and only training on the training data is integral to ensuring that there is no data leakage, i.e. that the model does not just 'memorize' the data. This helps avoid overfitting, and provides a more accurate picture of the model's ability to generalize during evaluation. 
 
       <p style="font-weight: bold; text-decoration: underline;">Code</p>
-    The code for this project can be found <a href="https://github.com/dylan/CSCI5612-ML">here</a>. The HTML rendering of the jupyter notebook is <a href="data/nn/nn.html">here</a>.
+    The code for this project can be found <a href="https://github.com/dylanhudson/CSCI5612-ML/tree/main/data/nn">here</a>. The HTML rendering of the jupyter notebook is <a href="data/nn/nn.html">here</a>.
 
 
       <p style="font-weight: bold; text-decoration: underline;">Results</p>

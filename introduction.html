@@ -94,33 +94,69 @@
         easily engage. The situation has certainly improved over the past decade or so, with the incorporation of EHR standards like FHIR, and platforms like Terra.bio, which have served to ameliorate some of the
         data-siloing issues from the initial digitization of health data. The challenges posed by systems-level integration, security, and scalability remain significant, however; collaborative work between governments,
         tech companies, researchers, and clinical institutions will be essential to operationalize healthcare data without compromising patients' rights or cybersecurity and clinical safety. 
- <p style="font-weight:bold;">Q & A</p>
-        <i>Do environmental risk factors like pesticide use associate with cancer incidence?</i>
+ <p style="font-weight:bold;"><u>Q & A</u></p>
+        <b><i>Do environmental risk factors like pesticide use associate with cancer incidence?</i></b><br>
+        It is difficult to say, but modeling suggested there is some association with higher pesticide use and increased cancer incidence. This does not imply any causation, 
+        but just that some statistical association was observed in the modeling process. Certain pesticides were more correlated with certain types of cancer incidence; this could indicate 
+        avenues for further research into biological mechanisms, or deeper analysis of other features that could be driving the associations, e.g. agriculturual practice or land use options. 
 <br><br>
-        <i>Can combinations of socio-economic and lifestyle factors predict cancer risk?</i>
+        <b><i>Can combinations of socio-economic and lifestyle factors predict cancer risk?</i></b><br>
+        <a href="clustering.html">Clustering analysis </a>suggested that combinations of socio-economic and lifestyle factors may help identify geographic regions with higher or lower cancer incidence, 
+          which could be useful for predicting risk based on this information. Certain factors correlated with particular cancer type incidence as well- for example, lack of a high school diploma and smoking
+        correlate with colorectal cancer incidence on a per-county basis, and having a bachelor's degree correlated with higher incidence of prostate and breast cancer. These do not imply causation, but
+      suggest potential avenues for further research into how socio-economic and lifestyle factors may relate to cancer incidence in different regions- perhaps access to good healthcare increases detection, 
+    or lack of education might be associated with certain environmental exposures in the course of employment in certain areas.
 <br><br>  
-        <i>Can survival rates or other prognostic outcomes be predicted from genomic, clinicial, or proteomic data?</i>
+        <b><i>Can survival rates or other prognostic outcomes be predicted from genomic, clinicial, or proteomic data?</i></b><br>
+        This is difficult to answer without high-quality and high-quantity clinical data containing detailed survival outcomes and prognostic information that is linkable to genomic and proteomic profiles. 
+        Modelling some limited clinical and genetic features with <a href="dectrees.html">decision trees</a> indicated the presence of predictive signal in features like
+        aneuploidy and genome alteration levels (for which there is established biological relevance) for predicting cancer stage (a metric of disease progression/anatomical spread). 
         <br><br>
         
-        <i>What are the most important risk factors for different types of cancer, and how do they interact?</i>
+        <b><i>What are the most important risk factors for different types of cancer, and how do they interact?</i></b><br>
+        This is of course an enormously broad question, as different types of cancer have different risk factors, and the interactions between genetic, environmental, and lifestyle factors can be complex. 
+        Certainly modelling and data will not answer the question of what factors causally increase cancer risk without specific trials set up, but some data can highlight associations between data features and increased cancer incidence, 
+        i.e. essentially suggesting candidates for indicators of increased cancer risk. EDA, clustering, and modeling showed generally that lower education levels, higher unemployment, smoking rates, pesticide concentrations, 
+        and geography all can be associated with increased cancer incidence. Some of these associations pose interesting questions about potential causal mechanisms that could be explored further. For example, 
+        the distinct geographical clusters of overall cancer incidence suggest differing factors influencing cancer risk in different regions, which could be related to environmental exposures, healthcare access, or other region-specific variables.
+        This suggests that understanding cancer risk may require considering multiple factors together, including socio-economic, environmental, and geographic variables, rather than looking at single factors in isolation.
+
+
         <br><br>
 
-        <i>Are there distinct clusters of patients with similar risk profiles or prognoses?</i>
+        <b><i>Are there distinct clusters of patients with similar risk profiles or prognoses?</i></b><br>
+        Individual patient-level data is difficult to obtain, especially in sets with broader information like demographics and residence or socioeconomic background, etc. Geographical clustering with overall
+        incidence rates did reveal distinct clusters of increased cancer incidence, some by socioecomic factors, and some apparently more defined by region. Principal component analysis on proteomics data did 
+        indicate that proteomic profiles cluster distinctly by cancer type; an expected finding, given the complexity and specificity of proteome expression in different cancers, but 
+        this does at least suggest that significant signal is present in proteomic data, and perhaps it could be leveraged to build detection systems that can indicate increased risk or catch cancers
+        earlier. 
         <br><br>
 
-        <i>Can associations between risk factors and genetic profiles be identified that may suggest complex biological interactions?</i>
+        <b><i>Can biologically relevant (i.e. disease-associated) proteins be identified from proteomic data?</i></b><br>
+        This is difficult to answer without healthy control data for comparison. However, analysis of <a href="pca.html">PCA loading scores</a> indicated which proteins contributed most
+        to variance across four different cancer types, and building an <a href="svms.html"> SVM classifier</a> indicated further proteins that contributed to distinguishing between cancer types, suggesting potential biological relevance in the context of disease. One of these proteins was CRYBG1, which is known to be important for cytoskeletal rigidity, i.e. maintaining cell strucuture; poor cellular rigidity can influence local cellular motility, and can affect how cancer cells migrate to other tissues. The protein with the highest loading score in PCA was DPYSL2, which is involved in cellular growth and adaptive immune response (or suppression of such a response). The protein processes involved in any cellular function are complex, but these findings suggest that there is some biological relevance in the signal picked up by PCA and SVM modelling. 
         <br><br>
 
-        <i>Are other comorbid health conditions associated with increased cancer risk or worse outcomes?</i>
-        <br><br>
+        <b><i>Are there geographic patterns or clusters that suggest unknown factors that may be associated with certain areas?</i></b><br>
+        In short, yes. This was one of the more interesting findings of the <a href="clustering.html">clustering analysis</a>, which revealed distinct geographic clusters within similar socioeconomic profiles- suggesting the presence of unknown factors that may be influencing cancer incidence in certain regions. Geography here could be acting as a proxy for environmental factors, e.g. increased wildfire smoke exposure, or subcharacteristics of rural living- for example, within rural-designated spaces, some could be primarily agricultural, some deserted, some adjancent to urban centers, etc, and the geographic clustering could indicate differences in drive-times to the nearest cancer centers. Or, perhaps there are cultural/sociopolitical differences that influence health behaviors or access to care that vary geographically, where certain regions tend to have similar state- and local- level policies or cultural norms that could impact health outcomes. 
 
-        <i>Are there geographic patterns or clusters that suggest unknown factors that may be associated with certain areas?</i>
         <br><br>  
 
-        <i>Can we predict cancer incidence from county-level exposure and health data?</i>
+        <b><i>Can we predict cancer incidence from county-level exposure and health data?</i></b><br>
+        Modeling 43 features including county-level pesticide loads, socioeconomic indicators, and geography with <a href="nn.html">neural networks</a> suggested that these factors together can provide predictive power for certain types of cancer incidence at the county level. Models were able to learn to classify counties as high or low risk for a certain cancer type with between 60-85% accuracy depending on the cancer type. This could also potentially be improved with hyperparameter adjustments and threshold tuning. The model could easily be extended to include additional features like levels of heart disease, and air quality. 
         <br><br>
 
-        <i>Can we relate genetic and protein expression data to environmental exposures and socioeconomic factors to identify potential interactions?</i>
+        <b><i>Can we relate genetic and protein expression data to environmental exposures and socioeconomic factors to identify potential interactions?</i></b><br>
+        This is a really fascinating question, especially in today's nascent personalized medicine landscape, where integrating multi-omics data with environmental and socioeconomic factors could potentially reveal complex interactions that influence disease risk and outcomes. There was not sufficent data avilable to model this (that is, the proteomics and clincal data was minimal, and could not be related to environmental or socioeconomic data) within the scope of this project, but the data preparation and pipelines did validate the use of certain techniques on this type of data. Identifying potential interactions would be an interesting challenge- many factors would need to be considered, like the temporal nature of interactions, sometimes involving decades, and the complex interplay between genetics, environment, and socioeconomic context that may influence disease risk over long periods. Exploring the more basic modeling in this project underscores the complexity of deriving insight from these types of broad datasets, and the need to proceed very carefully 
+        to avoid invalid conclusions and data quality issues. 
+     
+        <br><br>
+
+        <b><i>What types of models are most effective for these types of public health and biological data analyses?</i></b><br>
+        As is often the case, the data availability turns out to have been a more stringent test of modeling approaches than the actual questions, and the need for deep understanding of epidemiology and biology
+        becomes quickly apparent in trying to devise meaningful questions and a modeling strategy. Some of the more subtle and challenging aspects of the data pipeline emerged when dealing with missing data and imputation strategies, as missingness can itself hold information and the choice of imputation method can significantly impact downstream modeling results. Ultimately, once the data was 
+        correctly prepared, most of the modelling approaches were at least initially effective, although not particularly useful for deriving actionable insights due to the limitations of the data and the complexity of the underlying phenomena. The Support Vector Machines were extremely efficient despite the high dimensionality of the proteomic data. Further evaluation of the neural network models would be required to assess their performance vis-a-vis correctly learning the relationships, but the use of a graph neural net does seem like a promising approach when working from a geographic perspective that requires modeling relationships not captured in the data/matrix structure.  
+        
         <br><br>
 
 
