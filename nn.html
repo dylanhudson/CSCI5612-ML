@@ -234,8 +234,16 @@ link between smoking and lung cancer. <br>
     <figcaption>Figure 2: Final confusion matrix for the Breast Cancer classifier.</figcaption>
   </figure>
 </div>
+
  <br>
-All of the training runs showed appropriate loss progression, indicating successful learning during training. Initial training at 200 epochs showed steady decreases; increasing to 300 epochs showed the gradient flattening out, indicating approaching convergence. The confusion matrices are interesting, and show differing ratios of false postiives and negatives. For example, Lung and Colorectal cancer show fairly balanced errors rates, while Non-Hodgkin's Lymphoma shows almost double the number of false positives vs false negatives, and breast cancer has about 50% false negatives to false positives. Sometimes the model is over-reporting high risk, and sometimes it underreports. These different scenarios suggest that each separate type classifier might benefit from threshold calibration, depending on its ratio and the desired goals/ relative costs. 
+All of the training runs showed appropriate loss progression, indicating successful learning during training. Initial training at 200 epochs showed steady decreases; increasing to 300 epochs showed the gradient flattening out, indicating approaching convergence. The confusion matrices are interesting, and show differing ratios of false postiives and negatives. For example, Lung and Colorectal cancer show fairly balanced errors rates, while Non-Hodgkin's Lymphoma shows almost double the number of false positives vs false negatives, and breast cancer has about 50% false negatives to false positives. Sometimes the model is over-reporting high risk, and sometimes it underreports. These different scenarios suggest that each separate type classifier might benefit from threshold calibration, depending on its ratio and the desired goals/ relative costs. <br>
+Example visualization of county predictions for Lung cancer:
+
+  <figure>
+    <img src="data/nn/lung_cancer_pred_map.png" alt="County predictions for Lung Cancer">
+    <figcaption>Figure 1: Example visualization of county predictions for the Lung Cancer classifier. "Actual-high" means that the county was incorrectly predicted as low, and "actual-low" means the county was incorrectly predicted as high. The other categories represent correctly predicted counties.</figcaption>
+  </figure>
+
 
 
       <p style="font-weight: bold; text-decoration: underline;">Conclusions</p>
